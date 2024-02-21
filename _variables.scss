@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+$primary: black;
+
+$dark: black;
+
+/* Global Settings  ------------------------------------ ------------------------------------   */
+
+img {
+    height: 65px;
+    width: 65px;
+}
+.navbar-nav {
+    display: flex;
+    margin-left: 5px;
+    letter-spacing: 7px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-link a:active {
+    background-color: rgb(0, 0, 0);
+    color:#fe7c7c;
+}
+.navbar-nav a:hover {
+    color:#ff8282;
+    background-color: #000000;
+}
+
+.containerheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Archivo Black;
+    letter-spacing: 7px;
+    margin-top: 120px;
+    background-color: #e7e7e7;
+    height: 90px;
+    border-bottom: 1px  solid black;
+    border-top: 1px  solid black;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Home page CSS starts here ------------------------------------ */
+
+@media (max-width: 2000px) {
+    body.home {
+        background-image: url(judeswebBG.jpeg);
+    }
+    .header {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1450px) {
+    body.home {
+        background-image: url(judeswebBG.jpeg);
+    }
+    .header {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 1100px) {
+    body.home {
+        background-image: url(judeswebBG.jpeg);
+        width: 100%;
+    }
+    .mainheader {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 950px) {
+    body.home {
+        background-image: url(judeswebBG.jpeg);
+        width: 100%;
+    }
+    .mainheader {
+        font-size: 1.2rem;
+    }
+}    
+@media (max-width: 600px) {
+    body.home {
+        background-image: url(judeswebBG.jpeg);
+        width: 100%;
+    }
+    .mainheader {
+        font-size: 1rem;
+        
+    }
+}
+
+/* ------------------ ALL OTHER PAGES QUERIES -------------- */
+
+@media (max-width: 1200px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .blogimg {
+        width: 50%;
+        height: 50%;
+    }
+}
+@media (max-width: 1100px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .pagesheader {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 950px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .pagesheader {
+        font-size: 1.2rem;
+    }
+}    
+@media (max-width: 600px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .pagesheader {
+        font-size: 1rem;
+    }
+}
+/* ------------------ Homepage CSS starts here -------------- */
+
+body {
+    margin: 0;
+    padding: 0;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+ 
+}
+
+.mainheader {
+    display: flex;
+    height: auto;
+    color: #EE96A2;
+    position: absolute;
+    text-wrap: wrap;
+    justify-content: left;
+    margin-top: 220px;
+    margin-right: 400px;
+    margin-left: 60px;
+    color: white;
+    font-family: Archivo Black;
+}
+
+
+/* blog page css starts here ------------------------------------ ------------------------------------  */
+
+.blogcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    border: 1px solid black;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.headers {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Roboto Slab;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.blogimg {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    min-height: 250px;
+    min-width: 250px;
+}
+
+  body.bloggy {
+    margin: 0;
+    padding: 0;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+  }
+
+  /* Design page CSS starts here ------------------------------------ ------------------------------------  */
+.designcontent {
+    margin-top: 50;
+    border: 1px solid black;
+}
+
+.designimg {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    min-height: 250px;
+    min-width: 250px;
+
+}
+
+.designimg {
+    --b: 5px; /* border thickness */
+    --c: #0000 25%,rgb(0, 0, 0) 0; /* define the color here */
+    padding: 10px;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
+    background-size: 50px 50px; /* adjust border length here */
+    background-repeat: no-repeat;
+    transition: .6s;
+    cursor: pointer;
+  }
+  
+  img:hover {
+    background-size: 51% 51%;
+  }
+
+/* Music Page CSS Starts Here  ----------------------------------------------------- */
+.musicphotobox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    border: 1px solid black;
+}
+
+.musicimg1 {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.spotifyplayer {
+    width: 50%;
+    padding: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+.googlead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+}
+.googleadheader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    font-family: Archivo Black;
+    width: 100%;
+}
+.googleadvideo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    
+}
+.listcontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    width: 100%;
+    border: 1px solid black;
+}
+#licenseheader {
+    font-family: Archivo Black;
+    border: 1px solid black;
+}
+/* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
+
+.container20 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogpostheader {
+    font-family: Roboto Slab;
+    font-size: 95px;
+    margin-top: 100px;
+}
+
+.container21 {
+    display: flex;
+
+    width: 900px;
+    height: 900px;
+    background-color: #efefef;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50;
+}
+
+.container22 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    text-wrap: wrap;
+    
+}
+
+.blogposttext {
+    margin-top: 25px;
+    font-family: Futura;
+    text-indent: 50px;
+    padding: 20px;
+}
+
+/* FOOTER CSS STARTS HERE ------------------------------------ */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+}
+.footerheader {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 100px;
+    letter-spacing: 20px;
+    font-family: Archivo Black;
+    margin: auto;
+    margin-top: 50px;
+}
+.footerlist1 {
+    display: flex;
+    padding: 75px;
+}
+.footerlist2 {
+    display: flex;
+    padding: 75px;
+}
+.footerlist3 {
+    display: flex;
+    padding: 75px;
+}
+.list-group-item1 {
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footerlink {
+    text-decoration: none;
+    padding: 10px;
+}
+.listgroup {
+    padding: 100px;
+    width: 100%;
+}
+li {
+    letter-spacing: 2px;
+    width: 100%;
+    
+}
+.footerpad {
+    padding: 10px;
+}
