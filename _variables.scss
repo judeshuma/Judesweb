@@ -36,11 +36,11 @@ img {
     align-items: center;
     font-family: Archivo Black;
     letter-spacing: 7px;
-    margin-top: 120px;
+    margin-top: 100px;
     background-color: #e7e7e7;
-    height: 90px;
-    border-bottom: 1px  solid black;
-    border-top: 1px  solid black;
+    height: 100px;
+    /*border-bottom: 5px  solid black;
+    border-top: 5px  solid black; */
     width: 100%;
     padding: 10px;
 }
@@ -160,15 +160,34 @@ body {
 
 
 /* blog page css starts here ------------------------------------ ------------------------------------  */
-
+.containerblog {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.containerblog img {
+    display: flex;
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
+}
 .blogcontent {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px;
-    border: 1px solid black;
     padding-bottom: 50px;
     flex-wrap: wrap;
+}
+.blogquote {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
 }
 .headers {
     display: flex;
@@ -188,7 +207,6 @@ body {
     min-height: 250px;
     min-width: 250px;
 }
-
   body.bloggy {
     margin: 0;
     padding: 0;  
@@ -198,24 +216,19 @@ body {
     background-position: center;
     width: 100%;
   }
-
   /* Design page CSS starts here ------------------------------------ ------------------------------------  */
 .designcontent {
     margin-top: 50;
-    border: 1px solid black;
 }
-
 .designimg {
     display: flex;
     height: 100%;
     width: 100%;
     margin-top: 50px;
-    padding: 20px;
+    margin-bottom: 50px;
     min-height: 250px;
     min-width: 250px;
-
 }
-
 .designimg {
     --b: 5px; /* border thickness */
     --c: #0000 25%,rgb(0, 0, 0) 0; /* define the color here */
@@ -230,46 +243,44 @@ body {
     transition: .6s;
     cursor: pointer;
   }
-  
   img:hover {
     background-size: 51% 51%;
   }
-
 /* Music Page CSS Starts Here  ----------------------------------------------------- */
+
 .musicphotobox {
     display: flex;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     padding: 50px;
-    border: 1px solid black;
+    margin-top: 40px;
 }
-
-.musicimg1 {
+.musicphotobox img {
     width: 250px;
     height: 250px;
     padding: 10px;
-    border: 1px solid black;
 }
 .spotifyplayer {
-    width: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     padding: 50px;
     margin-top: 50px;
-    border: 1px solid black;
+    margin-left: 50px;
 }
 .googlead {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 1px solid black;
     width: 100%;
+    
 }
 .googleadheader {
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 1px solid black;
     font-family: Archivo Black;
     width: 100%;
 }
@@ -277,22 +288,22 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 1px solid black;
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
     
 }
 .listcontainer {
     display: flex;
     flex-direction: column;
+    justify-content: right;
     text-align: left;
-    justify-content: left;
     width: 100%;
-    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 100px;
 }
 #licenseheader {
     font-family: Archivo Black;
-    border: 1px solid black;
 }
 /* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
 
@@ -334,20 +345,26 @@ body {
     padding: 20px;
 }
 
+/*CHORDO CSS STARTS HERE ----------------------------------*/
+
+.containerchordo {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+
 /* FOOTER CSS STARTS HERE ------------------------------------ */
 
 .footer {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
     width: 100%;
     justify-content: center;
     text-align: center;
-    
 }
 .footerheader {
     display: flex;
-    border: 1px solid black;
     justify-content: center;
     text-align: center;
     width: 100%;
