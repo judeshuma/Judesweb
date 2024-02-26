@@ -1,16 +1,4 @@
-from tkinter import *
-from tkinter import ttk
-import time 
-import random
 
-# create variable for Tk function & set up window
-root = Tk()
-root.title("Chordo 3.1")
-root.geometry("400x300")
-root.config(bg="yellow")
-
-label1 = Label(root, text="Welcome to Chordo\nLet's create a random chord progression!\n", bg="yellow")
-label1.pack()
 
 #define variables for comboboxes
 values = ["C Major", "D Major", "E Major", "F Major", "G Major", "A Major", "B Major"]
@@ -36,8 +24,8 @@ def chosen():
     values_B = ["B", "C#m", "D#m", "E", "F#", "G#m", "A"]
     
     final_list = []
-    selection = combo.get()
-    numselection = int(combo2.get())
+    selection = request.form.get('keysig')
+    numselection = request.form.get(int('numchords'))
     
     
     if "C Major" == selection:
@@ -50,8 +38,7 @@ def chosen():
             finale = str(final_list)
         print(f"{finale}")
         ffinale = print("Here are your chords: ", finale)
-        label2 = Label(root, text=finale, padx=10, pady=10)
-        label2.pack()
+        
 
     elif "D Major" == selection:
         for i in range(0,numselection):
@@ -63,9 +50,7 @@ def chosen():
             finale = str(final_list)
         print(f"{finale}")
         ffinale = print("Here are your chords: ", finale)
-        label2 = Label(root, text=finale, padx=10, pady=10)
-        label2.pack()
-
+        
     elif "E Major" == selection:
         for i in range(0,numselection):
             enum = random.randrange(numselection)
@@ -76,8 +61,7 @@ def chosen():
             finale = str(final_list)
         print(f"{finale}")
         ffinale = print("Here are your chords: ", finale)
-        label2 = Label(root, text=finale, padx=10, pady=10)
-        label2.pack()
+        
     
     elif "F Major" == selection:
         for i in range(0,numselection):
@@ -89,8 +73,7 @@ def chosen():
             finale = str(final_list)
         print(f"{finale}")
         ffinale = print("Here are your chords: ", finale)
-        label2 = Label(root, text=finale, padx=10, pady=10)
-        label2.pack()
+        
 
     elif "G Major" == selection:
         for i in range(0,numselection):
@@ -102,8 +85,7 @@ def chosen():
             finale = str(final_list)
         print(f"{finale}")
         ffinale = print("Here are your chords: ", finale)
-        label2 = Label(root, text=finale, padx=10, pady=10)
-        label2.pack()
+        
     
     elif "A Major" == selection:
         for i in range(0,numselection):
@@ -115,8 +97,7 @@ def chosen():
             finale = str(final_list)
         print(f"{finale}")
         ffinale = print("Here are your chords: ", finale)
-        label2 = Label(root, text=finale, padx=10, pady=10)
-        label2.pack()
+        
     
     elif "B Major" == selection:
         for i in range(0,numselection):
@@ -128,8 +109,7 @@ def chosen():
             finale = str(final_list)
         print(f"{finale}")
         ffinale = print("Here are your chords: ", finale)
-        label2 = Label(root, text=finale, padx=10, pady=10)
-        label2.pack()
+        
 
 
     else:
@@ -159,3 +139,6 @@ root.mainloop()
 # Can I create a variable for the input of what Major key and just have the code be one time and not have to repeat 5000 times thoroughout it?
 
 # I still need to figure out how to not pull from a randrange too
+
+
+#I need to add that layer to my list index, where as I can have the input select from the list of lists and use a variable globally for the input
