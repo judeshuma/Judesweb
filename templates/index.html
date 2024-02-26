@@ -1,13 +1,20 @@
 {% extends 'base.html' %}
 
 {% block head %}
+<title>Chordo</title>
+{% endblock %}
 
+{% block body %}
 <h1 class="text-center">Chordo</h1>
 <h5 class="text-center">A Random Chord Progression Generator</h5><br>
 
-<form class="text-center" action="{{url_for('calculate')}}" method="post, get">
+<form action="/" method="post">
+    <input type="text" name="content">
+</form>
+
+<form class="text-center" action="{{url_for('calculate')}}" method = 'POST'>
     Choose a Key Signature
-    <select id="selectkey" name="keysignature">
+    <select id="selectkey" name="keysig">
         <option value="C Major">C Major</option>
         <option value="D Major">D Major</option>
         <option value="E Major">E Major</option>
@@ -17,7 +24,7 @@
         <option value="B Major">B Major</option>
     </select><br>
     How Many Chords
-    <select id="selectnum"name="numberofchords">
+    <select id="selectnum" name="numchords">
         <option value="">0 &nbsp &nbsp &nbsp &nbsp &nbsp</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -32,8 +39,5 @@
         <p class="mt-3">hello</p>
     </div>
 </form>
-{% endblock %}
-
-{% block body %}
 
 {% endblock %}

@@ -8,16 +8,14 @@ db = SQLAlchemy(app)
 class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(200), nullable=False)
-    
 
-@app.route('/', methods = ['post', 'get'])
+@app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route("/calculate")
+@app.route("/calculate", methods = ['GET','POST'])
 def calculate():
-    return "LU IS SUPER GAY CAT VIBES MAN"
-
+    return "That this works"
 
 if __name__ == "__main__":
     app.run(debug=True)
