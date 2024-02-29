@@ -379,6 +379,8 @@ footer > h3 {
 }
 
 .footerlist2 {
+    justify-content: center;
+    text-align: center;
     padding: 75px;
     border: 1px solid black;
     height: 200px;
@@ -386,5 +388,16 @@ footer > h3 {
 }
 .footerlist2 > p {
     display: inline-block;
-}
+    text-decoration: none;
+    padding: 20PX;
+    font-family: Montserrat;
 
+}
+.links { 
+   text-decoration: none;
+   color: #000000;
+}
+.footerlist2 a:hover {
+    color:#ff8282;
+    background-color: #000000;
+}
