@@ -11,8 +11,8 @@ $dark: black;
 /* Global Settings  ------------------------------------ ------------------------------------   */
 
 img {
-    height: 65px;
-    width: 65px;
+    height: 35px;
+    width: 35px;
 }
 .navbar-nav {
     display: flex;
@@ -29,22 +29,20 @@ img {
     color:#ff8282;
     background-color: #000000;
 }
-
 .containerheader {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Archivo Black;
-    letter-spacing: 0px;
-    margin-top: 100px;
-    background-color: #e7e7e7;
-    height: 100px;
-    /*border-bottom: 5px  solid black;
-    border-top: 5px  solid black; */
+    letter-spacing: 10px;
+    background-color: #EE96A2;
+    height: auto;
     width: 100%;
-    padding: 10px;
+   
 }
-
+.containerheader > p {
+    font-size: 500px;    
+}
 /* Home page CSS starts here ------------------------------------ */
 
 @media (max-width: 2000px) {
@@ -94,45 +92,43 @@ img {
 
 /* ------------------ ALL OTHER PAGES QUERIES -------------- */
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .blogimg {
-        width: 50%;
-        height: 50%;
+    .containerheader > p {
+        font-size: 400px;
     }
 }
-@media (max-width: 1100px) {
+@media (max-width: 12500px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .pagesheader {
-        font-size: 1.5rem;
+    .containerheader > p {
+        font-size: 300px;
     }
 }
-@media (max-width: 950px) {
+@media (max-width: 990px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .pagesheader {
-        font-size: 1.2rem;
+    .containerheader > p {
+        font-size: 200px;
     }
 }    
-@media (max-width: 600px) {
+@media (max-width: 670px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .pagesheader {
-        font-size: 1rem;
+    .containerheader > p {
+        font-size: 100px;
     }
 }
 /* ------------------ Homepage CSS starts here -------------- */
-
 body {
     margin: 0;
     padding: 0;  
@@ -141,9 +137,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     width: 100%;
- 
 }
-
 .mainheader {
     display: flex;
     height: auto;
@@ -157,8 +151,6 @@ body {
     color: white;
     font-family: Archivo Black;
 }
-
-
 /* blog page css starts here ------------------------------------ ------------------------------------  */
 .containerblog {
     display: flex;
@@ -169,57 +161,33 @@ body {
     margin-top: 50px;
 }
 .containerblog img {
-    display: flex;
+    display: block;
     margin-top: 50px;
     height: 250px;
     width: 250px;
 }
-.blogcontent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    padding-bottom: 50px;
-    flex-wrap: wrap;
+.blogintro > p {
+    margin-bottom: 30px;
+    color: #fe7c7c;
+    width: 100%
 }
-.blogquote {
-    display: flex;
-    justify-content: center;
-    text-align: center; 
-}
-.blogquote2 {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-}
-.headers {
-    display: flex;
+.blogpostcontainer {
+    display: grid;
     justify-content: center;
     text-align: center;
-    font-family: Roboto Slab;
-    width: 100%;
+    font-family: sans-serif;
     margin-top: 50px;
-    
 }
-.blogimg {
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin-top: 50px;
-    padding: 20px;
-    min-height: 250px;
-    min-width: 250px;
+.blogpostcontainer > div > h3{
+    display: inline-block;
+    color: #fe7c7c;
+    background-color: black;
 }
-  body.bloggy {
-    margin: 0;
-    padding: 0;  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    width: 100%;
-  }
+.blogpostcontainer p{
+    display: inline-block;
+    color: #fe7c7c;
+    background-color: black;
+}
   /* Design page CSS starts here ------------------------------------ ------------------------------------  */
 .designcontent {
     margin-top: 50;
@@ -390,6 +358,10 @@ body {
 }
 
 /* FOOTER CSS STARTS HERE ------------------------------------ */
+.footercontainer {
+    display: flex;
+    width: 100%;
+}
 
 .footer {
     display: flex;
