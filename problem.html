@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Styles -->
+    <link rel="shortcut icon" type="x-icon" href="favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.scss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bloggy" style="background-color: #ffffff;">
+    <div class="container-fluid1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./images/jlogo.png" width="25px" height="25px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="music.html">Music</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="design.html">Design</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Connect
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.instagram.com/judeshuma/">Instagram</a></li>
+                    <!--<li><hr class="dropdown-divider"></li>-->
+                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/judeshuma/">LinkedIn</a></li>
+                    <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCqBOp92JShjL2Tml2UiiWJA">Youtube</a></li>
+                    <li><a class="dropdown-item" href="https://open.spotify.com/artist/3CkNneXMjQdZ3cMGYLfWke?si=uZ1WrL-VQkCr6ovyCwydGA/">Spotify</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+<div class="blogcontent">
+        <p id="blogheader">It's Not The Problem Itself, It's How We React</p>
+        <div>
+            <p class="blogposttext">It happens to everyone. Life is constantly throwing problems our way as we navigate through our weeks, it’s inevitable. Without a solution to these problems nothing will get better. Problems propose frustration. It’s not you it’s me I swear. Well actually it’s the windstorm that took out the Silver Maple tree in my front yard that now is collapsed and resting on the leather sofa in my living room allowing the rain to come in. Yeah that sucks. We can’t control the problems, we can’t even say when the next one will appear. What we can control though, is how we react to them.
+                
+                There is always a solution. Despite our best efforts to believe otherwise, there is always an answer waiting for us on the other side. How do we get to that answer? That is the main question at hand.
+                
+                Step one: Compartmentalize the problem. Break it down into smaller chunks. <br>
+                
+                <br> Break. <br>  It.  <br>  Down.  <br> 
+                
+                
+                <br> There was a book I stumbled across years back called <a href="https://a.co/d/71g3hRM">“Atomic Habits”</a> by James Clear that focuses on the idea of small incremental changes in ones behavior, and how together those tiny changes can help you achieve big things. Let’s apply a similar logic. Subdivide the problem into smaller ones. If the subproblem is still to difficult then subdivide the subproblem into smaller subproblems. Keep breaking it down until you hit the point where it feels achievable. <br> <br>
+                <img src="./images/math.jpeg" style="display: flex; width: 100%; height: auto; padding: 50px;" alt="">
+                I wanted to build a web app. Great. Where do I even start? Well I needed to choose the language to write it in. Okay python3 great. Now what? I want to have two inputs and be able to click a button and display my desired output. Well before I can do any of that I need to figure out how can I display the app. I need to find a way to render it on the screen for the user. Great <a href="https://docs.python.org/3/library/tkinter.html">Tkinter</a>. Break down Tkinter now. How do I form a box for the app to sit in. How can I create input boxes and the basic layout. Before I even get to having my app run a more complex python code I’ll break it down again. Can I get my app to run a basic math problem? Two input variables that when I click the button, will come together into a single output? Great I got that, now substitute the integers will my desired variables. I broke down every single facet the whole way through. <br> <br>
+                
+                You want to write a song. Great. How many parts will the song have? Forget that, let’s start with a verse. Let’s find a basic chord progression to work with. Great. Now how about an outline of a melody. Now let’s start on the chorus. Melody next. Now we can focus on instrumentation. What instruments do we like? What about the drum beat? Is there a drum beat? By breaking things down we can achieve little bits of success at a time, which in turn give us confidence to keep moving forward, and slowly we accomplish what we set out to in the first place. Nothing comes easy, that’s a fact. But by attacking the macro problem at hand by subdividing we can rise to great heights. 
+            </p>
+        </div>
+</div>
+
+<div class="commentsbox">
+    <div>
+        <label for="newComment" name="newComment">-Add Your Comment Below-</label>
+    </div>
+    <div>
+        <textarea style="background-color: #ff8282;" id="newComment"></textarea>
+    </div>
+    <button id="addComments">Add Comment</button>
+    <div id="allComments"></div>
+</div>
+
+
+
+
+
+
+<!-- <section class="commentsection">
+    <h3>COMMENTS</h3>
+    <hr>
+    <form id="myForm">
+        Name: <input id="userName" type="text" name="fname">
+        <br><br>
+        <textarea id ="userComment" rows="4" cols="50" name="comment" placeholder="Enter Your Comment Here"></textarea>
+        <br><br>
+        <input type="button" onclick="myFunction()" value="Submit">
+    </form>
+    <hr>
+    <div id="Commentbox">
+        <p id="data"></p>
+    </div>
+    <script>
+        function myFunction(){
+            let data = "";  let name = document.getElementById("userName").value
+            let comment = document.getElementById("userComment").value
+            
+            data = "Name: "+name+"<br/>Comment: "+comment
+            
+            document.getElementById("data").innerHTML = data  // display data to paragraph
+            data.addEventListener('load', comment)
+        }
+    </script>
+</section> -->
+
+<footer>
+<h3>JudesWeb</h3>
+  <div class="footerlist2">
+    <p><a class="links" href="blog.html">Back To The Top</a></p>
+    <p><a class="links" href="about.html">About Me</a></p>
+    <p><a class="links" href="https://www.instagram.com/judeshuma/">Instagram</a></p>
+    <p><a class="links" href="https://www.youtube.com/channel/UCqBOp92JShjL2Tml2UiiWJA">Youtube</a></p>
+    <p><a class="links" href="https://www.linkedin.com/in/judeshuma/">Linked</a></p>
+    <p><a class="links" href="https://open.spotify.com/artist/3CkNneXMjQdZ3cMGYLfWke?si=uZ1WrL-VQkCr6ovyCwydGA/">Spotify</a></p>
+    <p><a class="links" href="https://www.facebook.com/judeshumamusic/">FBook</a></p>
+    <p><a class="links" href="https://github.com/judeshuma">Github</a></p>
+    <p>630.835.61seven2</p>
+    <p>shumajude@gmail.com</p>
+  </div>
+</footer>
+
+
+    <!-- Javascript -->
+    <!--<script type="module" src="./js/app.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    </head>
+
+  </body>
+  </html>

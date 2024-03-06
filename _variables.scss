@@ -91,8 +91,7 @@ img {
 }
 
 /* ------------------ ALL OTHER PAGES QUERIES -------------- */
-
-@media (max-width: 12500px) {
+@media (max-width: 2050px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
@@ -100,6 +99,46 @@ img {
     .containerheader > p {
         font-size: 300px;
     }
+    #aboutme {
+        font-size: 250px;
+    }
+    #design {
+        font-size: 300px;
+    }
+}
+@media (max-width: 1750px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 250px;
+    }
+    #design {
+        font-size: 300px;
+    }
+}
+@media (max-width: 1350px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 400px;
+    }
+    #design {
+        font-size: 200px;
+    }
+    #music {
+        font-size: 200px;
+    }
+    
 }
 @media (max-width: 990px) {
     body.bloggy {
@@ -109,8 +148,21 @@ img {
     .containerheader > p {
         font-size: 200px;
     }
+    #aboutme {
+        font-size: 120px;
+    }
+    #design {
+        font-size: 150px;
+    }
+    #music {
+        font-size: 170px;
+    }
+    #blogheader {
+        font-size: 60px;
+    }
+    
 }    
-@media (max-width: 670px) {
+@media (max-width: 740px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
@@ -119,13 +171,20 @@ img {
         font-size: 100px;
         
     }
-    // #designheader {
-    //     letter-spacing: 0px;
-    //     color: aliceblue;
-    //     font-size: 80px;
-    // }
+    #aboutme {
+        font-size: 100px;
+    }
+    #design {
+        font-size: 100px;
+    }
+    #music {
+        font-size: 120px;
+    }
+    #blogheader {
+        font-size: 50px;
+    }
 }
-@media (max-width: 470px) {
+@media (max-width: 520px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
@@ -133,11 +192,25 @@ img {
     .containerheader > p {
         font-size: 80px;
     }
-    // #designheader {
-    //     letter-spacing: 0px;
-    //     color: aliceblue;
-    //     font-size: 40px;
-    // }
+    #aboutme {
+        font-size: 50px;
+    }
+    #design {
+        font-size: 70px;
+    }
+    .designimg {
+        width: 150px;
+        height: 150px;
+    }
+    #music {
+        font-size: 80px;
+    }
+    .blogposttext { 
+        padding: 0px;
+    }
+    #blogheader {
+        font-size: 45px;
+    }
 }
 /* ------------------ Homepage CSS starts here -------------- */
 body {
@@ -172,12 +245,6 @@ body {
     height: 100px;
     
 }
-/*.containerblog img {
-    display: block;
-    margin-top: 50px;
-    height: 250px;
-    width: 250px;
-}*/
 .blogintro > p {
     margin-bottom: 70px;
     color: #fe7c7c;
@@ -196,6 +263,10 @@ body {
     color: #fe7c7c;
     background-color: black;
 }
+.blogpostcontainer > div > h3 > a {
+    text-decoration: none;
+    color: #fe7c7c;
+}
 .blogpostcontainer p{
     display: inline-block;
     color: #fe7c7c;
@@ -207,7 +278,7 @@ body {
     letter-spacing: 40px; 
     margin-right: -40px
 }
-  .designcontent {
+.designcontent {
     margin-top: 50;
 }
 .designimg {
@@ -216,8 +287,7 @@ body {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
-    min-height: 250px;
-    min-width: 250px;
+    min-width: 275px;
 }
 .designimg {
     --b: 5px; /* border thickness */
@@ -262,24 +332,24 @@ body {
     display: flex;
     flex-direction: wrap;
     justify-content: center;
-    width: 1500px;
-    padding: 100px;
+    width: 100%;
+    padding: 50px;
+    min-width: 375px;
     
 }
 .googlead {
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    border: 1px solid black;
-}
-.googlead video {
     
+    justify-content: center;
+    text-align: center;
 }
 .googlead h2 {
     font-family: Archivo Black;
     width: 100%;
 }
 .googlead p {
-    float: right;
+    width: 100%;
 }
 .vimeoheader {
     display: block;
@@ -287,8 +357,8 @@ body {
     text-align: center;
     font-family: Archivo Black;
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    
 }
 .vimeocontainer {
     display: grid;
@@ -328,63 +398,93 @@ li {
 }
 /* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
 
-.container20 {
-    display: flex;
+.blogcontent {
+    display: inline;
     justify-content: center;
     align-items: center;
 }
-
-.blogpostheader {
+.blogcontent > p {
     font-family: Roboto Slab;
-    font-size: 95px;
-    margin-top: 100px;
-}
-
-.container21 {
-    display: flex;
-    width: 900px;
-    height: 900px;
-    background-color: #efefef;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50;
-}
-
-.container22 {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    text-wrap: wrap;
-    
+    font-size: 85px;
+    margin-top: 50px;
+    padding: 35px;
+    background-color: #EE96A2;
 }
 
 .blogposttext {
-    margin-top: 25px;
-    font-family: Futura;
+    margin-top: 20px;
+    font-family: sans-serif;
     text-indent: 50px;
     padding: 20px;
 }
+/* ABOUT ME CSS STARTS HERE ------------------------------------ */
+.aboutme {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.aboutme2 {
+    border: 1px solid black;
+    width: 1200px;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+.aboutme > p {
+    margin-top: 100px;
+}
+.aboutme2 > p > img {
+    float: left;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    
+}
+/* COMMENT CSS STARTS HERE -----------------------------------------*/
+.commentsbox {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
 
+// .commentsection {
+//     display: block;
+//     justify-content: center;
+//     text-align: center;
+//     width: 100%;
+// }
+// .Commentbox {
+//     display: flex;
+//     width: 100%;
+// }
+// #userComment {
+//     max-width: 300px;
+// }
+// .commentsection > h3 {
+//     font-family: Archivo Black;
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+// }
 /* FOOTER CSS STARTS HERE ------------------------------------ */
 
 footer > h3 {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 100px;
-    letter-spacing: 20px;
+    padding: 50px;
+    letter-spacing: 1em;
     font-family: Archivo Black;
-    margin: auto;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .footerlist2 {
     justify-content: center;
     text-align: center;
     padding: 75px;
-    border: 1px solid black;
     height: 200px;
     object-fit: contain;
+    background-color: #f9f7f7;
+    height: auto;
 }
 .footerlist2 > p {
     display: inline-block;
