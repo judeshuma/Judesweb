@@ -46,8 +46,8 @@
         <p id="blogheader">Deploying Your First LAMP Stack</p>
         <div class="blogposttext">
             <p>
-                Congratulations! You are here! Which means you are interested in building your first LAMP stack. Let’s begin! “LAMP” is an acronym that represents the four main components of the stack: 
-
+                Congratulations! You are here! Which means you are interested in building your first LAMP stack. Let’s begin! “LAMP” is an acronym that represents the four main components of the stack: </p>
+            <div><img src="./images/lamp.jpeg" style="display:flex; float: right; width: 170px; height: auto; padding: 20px;" alt=""></div>
 <ul>
     <li>1. <a href="https://training.linuxfoundation.org/training/introduction-to-linux/">Linux</a>: The Operating System </li>
     <li>2. <a href="https://httpd.apache.org/">Apache</a>: The Web Server</li> 
@@ -59,11 +59,10 @@ Many of the websites we still use everyday are powered in this fashion. Where to
 <br><br>I chose <a href="https://www.ionos.com/server-configurator?__sendingdata=1&cart.action=add-bundle&cart.bundle=tariff-core-vps-linux-xs-bundle&packageselection=servers%2Fvps&linkId=ct.btn.order.tariff-core-vps-linux-xs&selected.datacenter=core-vps-datacenter-ewr">IONOS</a> as my server host. It’s cost effective and they have phenomenal support. Another option is <a href="https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email">AWS</a>(Amazon Cloud). 
 They offering a free-tier for the first year but with no support. So if you feel confident enough that’s a great option otherwise I’d suggest IONOS. <br><br>
 <ul>
-
     <li>1. <b>Acquire Your Server / Choose Your Linux Distribution:</b><br>
 	Linux has a wide variety of distributions but for this tutorial we are going to use <a href="https://en.wikipedia.org/wiki/Ubuntu">Ubuntu.</a></li><br>
     <li>2. <b>SSH into your server:</b><br>
-	SSH or Secure Shell is a network communication protocol that enables two computers to communicate via the terminal. To learn more about SSH click **here.**</li><br>
+	SSH or Secure Shell is a network communication protocol that enables two computers to communicate via the terminal. To learn more about SSH click <a href="SSH.html">here</a>.</li><br>
     <li>3. <b>Install Apache:</b><br>
     Use the package manager on your Linux distribution to install the Apache web server. <br><br>
             <div class="codesnippet">
@@ -106,18 +105,45 @@ They offering a free-tier for the first year but with no support. So if you feel
                     </div>
     </li> 
 </ul>
-	-
+        <p>Okay now for the best part. In your terminal you are going to want to navigate to the folder
+            /var/www/html. Here we are going to create our index.html file. Choose whichever text editor
+            you feel comfortable with, personally I enjoy Vim. Paste the following into the document:
+        </p><br>
+                    <div class="codesnippet">
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
 
-            </p>
+                            &lt;html&gt;<br>
+                            
+                            &lt;body&gt;<br>
+                            
+                            &lt;h1&gt;The Heading tag &lt;/h1&gt;<br>
+                            
+                            &lt;p&gt;A Paragraph.&lt;/p&gt;<br>
+                            
+                            &lt;p&gt;Happy Learning&lt;/p&gt;<br>
+                            
+                            &lt;p&gt;Hello World! What's Crappenin'?&lt;/p&gt;<br>
+                            
+                            &lt;/body&gt;<br>
+                            
+                            &lt;/html&gt;<br>
+                        </code>
+                    </div><br>    
+        <p>Save and exit the text editor. Your server already has been assigned an IP address. Locate it and 
+            plug it into the address bar of your browser. http://your.ip.add.ress - Click enter and the text written
+            into your document will now be displayed in you browser window.</p>
+        <br>
+        <p>Now start building out that website you've always dreamed of!!!</p>        
         </div>
-</div>
+</div><br><br>
 
 <div class="commentsbox">
     <div>
         <label for="newComment" name="newComment">-Add Your Comment Below-</label>
     </div>
     <div>
-        <textarea style="background-color: #ff8282;" id="newComment"></textarea>
+        <textarea style="background-color: white;" id="newComment"></textarea>
     </div>
     <button id="addComments">Add Comment</button>
     <div id="allComments"></div>
@@ -157,6 +183,9 @@ They offering a free-tier for the first year but with no support. So if you feel
 
 <footer>
 <h3>JudesWeb</h3>
+<div class="containerblog">
+    <img src="./images/judeintro1.jpg" alt="">
+</div><br><br>
   <div class="footerlist2">
     <p><a class="links" href="blog.html">Back To The Top</a></p>
     <p><a class="links" href="about.html">About Me</a></p>

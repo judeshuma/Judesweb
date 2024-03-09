@@ -116,6 +116,10 @@ img {
         padding-left: 350px;
         padding-right: 350px;
     }
+    .musicbody {
+        padding-left: 150px; 
+        padding-right: 150px;
+    }
 }
 @media (max-width: 1750px) {
     body.bloggy {
@@ -141,6 +145,10 @@ img {
     #blogheader {
         padding-left: 200px;
         padding-right: 200px;
+    }
+    .musicbody {
+        padding-left: 150px; 
+        padding-right: 150px;
     }
 }
 @media (max-width: 1375px) {
@@ -171,6 +179,10 @@ img {
         padding-left: 100px;
         padding-right: 100px;
         font-size: 60px;
+    }
+    .musicbody {
+        padding-left: 100px; 
+        padding-right: 100px;
     }
 
 }
@@ -203,7 +215,10 @@ img {
     .blogposttext > p {
         font-size: 13pt;
     }
-    
+    .musicbody {
+        padding-left: 50px; 
+        padding-right: 50px;
+    }
 }    
 @media (max-width: 770px) {
     body.bloggy {
@@ -234,6 +249,10 @@ img {
         padding-left: 75px;
         padding-right: 75px;
         font-size: 38px;
+    }
+    .musicbody {
+        padding-left: 50px; 
+        padding-right: 50px;
     }
 }
 @media (max-width: 630px) {
@@ -277,6 +296,10 @@ img {
         padding-right: 20px;
         font-size: 25px;
     }
+    .musicbody {
+        padding-left: 50px; 
+        padding-right: 50px;
+    }
 }
 /* ------------------ Homepage CSS starts here -------------- */
 body {
@@ -307,7 +330,6 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin-bottom: 35px;
     height: 100px;
     
 }
@@ -336,6 +358,11 @@ body {
     display: inline-block;
     color: #fe7c7c;
     background-color: black;
+}
+.containerblog > img {
+    display: flex;
+    height: 100px;
+    width: 100px;
 }
 /* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
 .bloggy {
@@ -384,7 +411,9 @@ body {
     border-radius: 20px;
     border: 2px solid black;
     padding: 20px;
-    
+}
+ul {
+    display: block;
 }
   /* Design page CSS starts here ------------------------------------ ------------------------------------  */
 
@@ -510,7 +539,9 @@ li {
     letter-spacing: 2px;
     width: 100%;
 }
-
+.listcontainer li {
+    list-style: none;
+}
 /* ABOUT ME CSS STARTS HERE ------------------------------------ */
 .aboutme {
     display: flex;
@@ -577,7 +608,7 @@ footer > h3 {
     padding: 75px;
     height: 200px;
     object-fit: contain;
-    background-color: #f9f7f7;
+    background-color: #EE96A2;
     height: auto;
 }
 .footerlist2 > p {
@@ -585,6 +616,7 @@ footer > h3 {
     text-decoration: none;
     padding: 20PX;
     font-family: Montserrat;
+    background-color: white;
 
 }
 .links { 
@@ -592,6 +624,6 @@ footer > h3 {
    color: #000000;
 }
 .footerlist2 a:hover {
-    color:#ff8282;
+    color: white;
     background-color: #000000;
 }
