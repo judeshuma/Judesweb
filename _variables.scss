@@ -160,7 +160,7 @@ img {
         font-size: 300px;
     }
     #aboutme {
-        font-size: 400px;
+        font-size: 200px;
     }
     #design {
         font-size: 200px;
@@ -300,6 +300,13 @@ img {
         padding-left: 50px; 
         padding-right: 50px;
     }
+    .codesnippet > code {
+       font-size: 10pt;
+    }
+    .musicbody {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 /* ------------------ Homepage CSS starts here -------------- */
 body {
@@ -377,7 +384,7 @@ body {
     align-items: center;
 }
 .blogcontent > p {
-    font-family: Roboto Slab;
+    font-family: Archivo Black;
     font-size: 85px;
     margin-top: 50px;
     padding: 35px;
@@ -504,9 +511,10 @@ ul {
     
 }
 .vimeocontainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
+    display: flex;
+    flex-wrap: wrap;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 300px 300px 300px;
     gap: 5px;
     width: 100%;
     height: auto;
@@ -544,22 +552,36 @@ li {
 }
 /* ABOUT ME CSS STARTS HERE ------------------------------------ */
 .aboutme {
-    display: flex;
+    display: block;
     width: 100%;
     justify-content: center;
     text-align: center;
 }
+.aboutmebody {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.about_me_photos img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
 .aboutme2 {
-    border: 1px solid black;
     width: 1200px;
-    margin-left: 140px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
     margin-top: 50px;
 }
 .aboutme > p {
+    justify-content: center;
     margin-top: 100px;
 }
 .aboutme2 > p > img {
-    float: left;
+    
     width: 250px;
     height: 250px;
     padding: 20px;
@@ -572,24 +594,6 @@ li {
     text-align: center;
 }
 
-// .commentsection {
-//     display: block;
-//     justify-content: center;
-//     text-align: center;
-//     width: 100%;
-// }
-// .Commentbox {
-//     display: flex;
-//     width: 100%;
-// }
-// #userComment {
-//     max-width: 300px;
-// }
-// .commentsection > h3 {
-//     font-family: Archivo Black;
-//     margin-top: 20px;
-//     margin-bottom: 20px;
-// }
 /* FOOTER CSS STARTS HERE ------------------------------------ */
 
 footer > h3 {
