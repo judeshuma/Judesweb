@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wdth,wght@97.1,100..800&family=Comfortaa:wght@300..700&family=Handjet:wght@100..900&display=swap');
 
 $primary: black;
 
@@ -40,12 +38,6 @@ img {
     width: 100%;
     color: rgb(0, 0, 0);
     border-top: .2px solid black;
-    
-}
-.containerheader > p {
-    font-size: 500px;  
-    
- 
 }
 /* Home page CSS starts here ------------------------------------ */
 
@@ -90,7 +82,6 @@ img {
     }
     .mainheader {
         font-size: 1rem;
-        
     }
 }
 /* ------------------ ALL OTHER PAGES QUERIES -------------- */
@@ -118,6 +109,7 @@ img {
     #blogheader {
         padding-left: 350px;
         padding-right: 350px;
+        
     }
     .musicbody {
         padding-left: 150px; 
@@ -152,6 +144,7 @@ img {
     #blogheader {
         padding-left: 200px;
         padding-right: 200px;
+        
     }
     .musicbody {
         padding-left: 150px; 
@@ -199,7 +192,6 @@ img {
         padding-left: 150px;
         padding-right: 150px;
     }
-
 }
 @media (max-width: 990px) {
     body.bloggy {
@@ -307,6 +299,9 @@ img {
     #music {
         font-size: 80px;
     }
+    .blogintro {
+        padding: 20px;
+    }
     .blogposttext { 
         padding-left: 20px;
         padding-right: 20px;
@@ -364,8 +359,7 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: 100px;
-    
+    height: 80px;
 }
 .blogintro > p {
     margin-bottom: 70px;
@@ -392,11 +386,6 @@ body {
     display: inline-block;
     color: #fe7c7c;
     background-color: black;
-}
-.containerblog > img {
-    display: flex;
-    height: 100px;
-    width: 100px;
 }
 /* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
 .bloggy {
@@ -450,11 +439,6 @@ ul {
     display: block;
 }
   /* Design page CSS starts here ------------------------------------ ------------------------------------  */
-
-#designheader {
-    letter-spacing: 40px; 
-    margin-right: -40px
-}
 .designcontent {
     margin-top: 50;
 }
@@ -497,7 +481,8 @@ ul {
 .musicphotobox img {
     width: 250px;
     height: 250px;
-    padding: 10px;
+    padding: 5px;
+    background-color: #EE96A2;
 }
 .spotifygooglebox {
     display: flex;
@@ -512,12 +497,10 @@ ul {
     width: 100%;
     padding: 50px;
     min-width: 375px;
-    
 }
 .googlead {
     grid-template-columns: 1fr 1fr;
-    width: 100%;
-    
+    width: 100%;   
     justify-content: center;
     text-align: center;
 }
@@ -535,13 +518,10 @@ ul {
     font-family: Archivo Black;
     width: 100%;
     margin-top: 50px;
-    
 }
 .vimeocontainer {
     display: flex;
     flex-wrap: wrap;
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 300px 300px 300px;
     gap: 5px;
     width: 100%;
     height: auto;
