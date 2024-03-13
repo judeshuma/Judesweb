@@ -34,14 +34,18 @@ img {
     justify-content: center;
     align-items: center;
     font-family: Archivo Black;
-    letter-spacing: 10px;
-    background-color: #EE96A2;
+    letter-spacing: 0px;
+    // background-color: #EE96A2;
     height: auto;
     width: 100%;
-   
+    color: rgb(0, 0, 0);
+    border-top: .2px solid black;
+    
 }
 .containerheader > p {
-    font-size: 500px;    
+    font-size: 500px;  
+    
+ 
 }
 /* Home page CSS starts here ------------------------------------ */
 
@@ -89,7 +93,6 @@ img {
         
     }
 }
-
 /* ------------------ ALL OTHER PAGES QUERIES -------------- */
 @media (max-width: 2050px) {
     body.bloggy {
@@ -120,6 +123,10 @@ img {
         padding-left: 150px; 
         padding-right: 150px;
     }
+    .aboutmebody {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 }
 @media (max-width: 1750px) {
     body.bloggy {
@@ -148,6 +155,10 @@ img {
     }
     .musicbody {
         padding-left: 150px; 
+        padding-right: 150px;
+    }
+    .aboutmebody {
+        padding-left: 150px;
         padding-right: 150px;
     }
 }
@@ -184,6 +195,10 @@ img {
         padding-left: 100px; 
         padding-right: 100px;
     }
+    .aboutmebody {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 
 }
 @media (max-width: 990px) {
@@ -219,6 +234,10 @@ img {
         padding-left: 50px; 
         padding-right: 50px;
     }
+    .aboutmebody {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }    
 @media (max-width: 770px) {
     body.bloggy {
@@ -252,6 +271,10 @@ img {
     }
     .musicbody {
         padding-left: 50px; 
+        padding-right: 50px;
+    }
+    .aboutmebody {
+        padding-left: 50px;
         padding-right: 50px;
     }
 }
@@ -306,6 +329,10 @@ img {
     .musicbody {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .aboutmebody {
+        padding-left: 35px;
+        padding-right: 35px;
     }
 }
 /* ------------------ Homepage CSS starts here -------------- */
@@ -556,10 +583,6 @@ li {
     width: 100%;
     justify-content: center;
     text-align: center;
-}
-.aboutmebody {
-    padding-left: 150px;
-    padding-right: 150px;
 }
 .about_me_photos img {
     margin-top: 20px;
