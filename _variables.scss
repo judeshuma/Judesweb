@@ -394,6 +394,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+.blogpostcontainer div h3 a:hover {
+        color: white;
+        background-color: #EE96A2;
+        border: 1px solid black;  
+}
+.blogpostcontainer div h3 a:hover .blogpostcontainer div h3 a p {
+    color: white;
+    background-color: #EE96A2;
+    border: 1px solid black;  
+}
 .blogcontent {
     display: block;
     justify-content: center;
