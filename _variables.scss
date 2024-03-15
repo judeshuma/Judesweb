@@ -301,10 +301,6 @@ img {
     #music {
         font-size: 80px;
     }
-    .blogintro2 img {
-        width: 200px;
-        height: auto;
-    }
     .blogposttext { 
         padding-left: 20px;
         padding-right: 20px;
@@ -363,32 +359,30 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 .blogintro {
-    flex: 1;
-    min-width: 250px;
-    max-width: 500px;
-    flex-direction: column;
-    margin: 60px;
+    flex-direction: row;
+    flex-basis: 450px;
     
 }
 .blogintro > p {
     color: #fe7c7c;
     width: 100%;
     text-align: justify;
+    padding: 20px;
 }
 .blogintro2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    max-width: 500px;
-    min-width: 250px;
+    flex-direction: row;
+    flex-basis: 450px;
 }
 .blogintro2 > img {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
+    padding: 20px;
 } 
 
 .blogpostcontainer {
