@@ -85,6 +85,41 @@ img {
     }
 }
 /* ------------------ ALL OTHER PAGES QUERIES -------------- */
+@media (max-width: 2750px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 225px;
+    }
+    #design {
+        font-size: 300px;
+    }
+    .blogposttext {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .blogposttext > p {
+        font-size: 13pt;
+    }
+    #blogheader {
+        padding-left: 350px;
+        padding-right: 350px;
+        
+    }
+    .musicbody {
+        padding-left: 150px; 
+        padding-right: 150px;
+    }
+    .aboutmebody {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+}
 @media (max-width: 2050px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
@@ -116,8 +151,8 @@ img {
         padding-right: 150px;
     }
     .aboutmebody {
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 350px;
+        padding-right: 350px;
     }
 }
 @media (max-width: 1750px) {
@@ -129,7 +164,7 @@ img {
         font-size: 300px;
     }
     #aboutme {
-        font-size: 250px;
+        font-size: 225px;
     }
     #design {
         font-size: 300px;
@@ -151,8 +186,8 @@ img {
         padding-right: 150px;
     }
     .aboutmebody {
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 350px;
+        padding-right: 350px;
     }
 }
 @media (max-width: 1375px) {
@@ -189,12 +224,14 @@ img {
         padding-right: 100px;
     }
     .aboutmebody {
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 250px;
+        padding-right: 250px;
     }
 }
 @media (max-width: 1150px) {
-
+    #aboutme {
+        font-size: 150px;
+    }
 }
 @media (max-width: 990px) {
     body.bloggy {
@@ -273,6 +310,9 @@ img {
     }
 }
 @media (max-width: 630px) {
+    #aboutme {
+        font-size: 80px;
+    }
     #blogheader {
         padding-left: 75px;
         padding-right: 75px;
@@ -351,7 +391,26 @@ body {
     margin-left: 60px;
     color: white;
     font-family: Archivo Black;
+    animation-name: changeColor;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    
 }
+@keyframes changeColor {
+    0% {
+      color: white;
+      opacity: 1;
+    }
+    60% {
+      color: #EE96A2;
+      opacity: 1;
+    }
+    100% {
+      color: white;
+      opacity: 1;
+    }
+  }
+
 /* blog page css starts here ------------------------------------ ------------------------------------  */
 .blogintrocontainer {
     display: flex;
@@ -359,12 +418,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-
 }
 .blogintro {
     flex-direction: row;
     flex-basis: 450px;
-    
 }
 .blogintro > p {
     color: #fe7c7c;
@@ -384,28 +441,63 @@ body {
     height: auto;
     padding: 20px;
 } 
+.blogposts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 
-.blogpostcontainer {
-    display: grid;
+}
+.dated {
+    color: #EE96A2;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card img {
+    height: 200px;
+    width: 100%;
+}
+.qoute {
+    display: flex;
+    width: 100%;
+}
+.quote > h1 {
+    display: flex;
+    font-family: Montserrat;
     justify-content: center;
     text-align: center;
-    font-family: sans-serif;
-    margin-top: 50px;
+    margin-top: 100px;
+    
 }
-.blogpostcontainer > div > h3{
-    display: inline-block;
-    color: #fe7c7c;
-    background-color: black;
-}
-.blogpostcontainer > div > h3 > a {
-    text-decoration: none;
-    color: #fe7c7c;
-}
-.blogpostcontainer p{
-    display: inline-block;
-    color: #fe7c7c;
-    background-color: black;
-}
+
+// .blogpostcontainer {
+//     display: grid;
+//     justify-content: center;
+//     text-align: center;
+//     font-family: sans-serif;
+//     margin-top: 50px;
+//     border: 1px solid black;
+// }
+// .blogpostcontainer > div > h3{
+//     display: inline-block;
+//     color: #fe7c7c;
+//     background-color: black;
+// }
+// .blogpostcontainer > div > h3 > a {
+//     text-decoration: none;
+//     color: #fe7c7c;
+// }
+// .blogpostcontainer p{
+//     display: inline-block;
+//     color: #fe7c7c;
+//     background-color: black;
+// }
 /* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
 .containerblog {
     display: flex;
@@ -413,6 +505,10 @@ body {
     text-align: center;
     width: 100%;
     height: auto;
+}
+.containerblog > img {
+    width: 100px;
+    height: 100px;
 }
 .bloggy {
     display: block;
@@ -488,7 +584,7 @@ ul {
 }
 .designimg {
     --b: 5px; /* border thickness */
-    --c: #0000 25%,rgb(0, 0, 0) 0; /* define the color here */
+    --c: #EE96A2 15%,rgb(0, 0, 0) 0; /* define the color here - original was all black 25%*/
     padding: 10px;
     background:
       conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
