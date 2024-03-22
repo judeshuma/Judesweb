@@ -99,6 +99,10 @@ img {
     #design {
         font-size: 300px;
     }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     .blogposttext {
         padding-left: 250px;
         padding-right: 250px;
@@ -139,6 +143,10 @@ img {
     #design {
         font-size: 300px;
     }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     .blogposttext {
         padding-left: 550px;
         padding-right: 550px;
@@ -178,6 +186,10 @@ img {
     #design {
         font-size: 300px;
     }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     .blogposttext {
         padding-left: 350px;
         padding-right: 350px;
@@ -216,6 +228,10 @@ img {
     }
     #design {
         font-size: 300px;
+    }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
     }
     .blogposttext {
         padding-left: 350px;
@@ -258,6 +274,10 @@ img {
     }
     #music {
         font-size: 200px;
+    }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
     }
     .blogposttext { 
         padding-left: 250px;
@@ -311,6 +331,10 @@ img {
         padding-left: 100px;
         padding-right: 100px;
     }
+    .blogposts {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     .blogposttext { 
         padding-left: 75px;
         padding-right: 75px;
@@ -347,6 +371,10 @@ img {
     }
     #music {
         font-size: 120px;
+    }
+    .blogposts {
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .blogposttext { 
         padding-left: 50px;
@@ -404,6 +432,10 @@ img {
     }
     #music {
         font-size: 80px;
+    }
+    .blogposts {
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .blogposttext { 
         padding-left: 20px;
@@ -518,6 +550,7 @@ body {
     gap: 30px;
     margin-top: 50px;
     margin-bottom: 20px;
+    
 
 }
 .dated {
@@ -530,7 +563,7 @@ body {
     
 }
 .card img {
-    height: 175px;
+    height: 150px;
     width: 100%;
     
 }
@@ -671,6 +704,9 @@ ul {
     height: 250px;
     padding: 5px;
     background-color: #EE96A2;
+}
+.midmusic {
+    display: inline-flex;
 }
 .spotifygooglebox {
     display: flex;

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTZR5NT769"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NTZR5NT769');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JudesWeb</title>
+    <!-- Styles -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/style.scss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bloggy" style="background-color: #ffffff;">
+    <div class="container-fluid1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="./images/jlogo.png" width="25px" height="25px" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="music.html">Music</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="design.html">Design</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.chordo.app">Chordo</a></li>
+                      <!--<li><hr class="dropdown-divider"></li>-->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+<div class="blogcontent">
+        <p id="blogheader">CSS Animation Tricks: Text Blurred to Focus and Rotating Objects</p>
+        <div class="blogposttext">
+            <p class="blogdate"><b>03.21.24</b></p>
+          <p>
+            Okay so we all know by now that the internet is bogged down with a lot stale websites and trash themes. Lots of garbage. Check out my version <a href="https://judeshuma.com">here</a>. &#128517;
+            But sometimes garbage can be beautiful too? Okay right. <br>
+            Simple little touches can bring your website alive, have it stand out from the rest. This is where the <b>animation-name</b> CSS property can come in handy.
+            First you'll get the code and then I'll break down what's actually going on.  And finally we use <b>animation-iteration-count</b> to tell it if we want <i>infinite</i> repetitions. <br><br>
+            Now we look at the @keyframes and see there are three stages to them. There is 0%, 60%, and 100%. So we are not only defining at what stages of the animation we want 
+            changes to occur, but also what those changes are as well. 
+            <br><br>
+            Here's the CSS: <br>
+            <div class="snippet">
+                <script src="https://gist.github.com/judeshuma/3c74e288c44a8a6db621d96f9f641e03.js"></script>
+            </div> <br>
+            <div class="blurcontainer">
+              <h1 id="blur2focus">Hello World</h1>
+            </div>
+            <style>
+              .blurcontainer {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+              }
+              #blur2focus {
+                  
+                  animation-name: colorBlur;
+                  animation-duration: 10s;
+                  animation-iteration-count: infinite;   
+              }
+
+              @keyframes colorBlur {
+                  0% {
+                    color: black;
+                  }
+                  50% {
+                    color: #EE96A2;
+                    filter: blur(2px);
+                  }
+                  100% {
+                    color: black;
+    }
+  }
+            </style>  
+            <br>
+            First we define the <b>animation-name</b> to use with our @keyframes (changeColor). The @keyframes controls the intermediate steps in our CSS animation sequence.
+            It defines the waypoints for the keyframes along the animation sequence. Next we define the length of how long it takes for our animation to run through one sequence 
+            with <b>animation-duration</b>. This means in the case above it will take ten seconds to run one cycle aka for the three @keyframes to get from 0% to 100%. The last piece 
+            is the <b>animation-iteration-count</b>. This is stating how many iterations of the sequence we want to happen for one cycle. 
+            <br> <br>
+            Now let's look at the keyframes. In the example above, we have set our @keyframes to start in focus with the color black. By the 50% marker we have told our animation
+            we want the color of our text to change as well as blur by 2px. And at the 100% marker or 10s, we will return back to the original state. <br><br>
+            Okay let's take this logic and look at one more example: <br> <br>
+            <div class="snippet">
+              <script src="https://gist.github.com/judeshuma/206e3c85f75d191322e4747556a2251c.js"></script>
+          </div> <br>
+          <div class="boxcontainer">
+            <div class="box"></div>
+          </div>
+          <style>
+            .boxcontainer {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
+            .box {
+              justify-content: center;
+              align-items: center;
+              background-color: orange;
+              border-radius: 20px;
+              width: 120px;
+              height: 120px;
+            }
+            .box:hover {
+              animation-name: rotate;
+              animation-duration: 0.9s;
+            }
+            @keyframes rotate {
+              0% {
+                transform: rotate(0);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+          </style> <br>
+          Here we have added the property :hover to our CSS. This is telling the box that when the mouse or cursor hovers over it, enact the @keyframes. Can you break
+          down what is going on? Try playing around with these simple features and see what you come up with yourself. 
+          </p>
+        </div>
+</div><br><br>
+
+<div class="commentsbox">
+    <div>
+        <label for="newComment" name="newComment">-You Can't Add Your Comment Below Yet.-</label>
+    </div>
+    <div>
+        <textarea style="background-color: white;" id="newComment"></textarea>
+    </div>
+    <button id="addComments">Add Comment</button>
+    <div id="allComments"></div>
+</div>
+
+<footer>
+<h3>JudesWeb</h3>
+<div class="containerblog">
+    <img src="./images/judeintro1.jpg" alt="">
+</div><br><br>
+  <div class="footerlist2">
+    <p><a class="links" href="blog.html">Back To The Top</a></p>
+    <p><a class="links" href="aboutme.html">About Me</a></p>
+    <p><a class="links" href="https://www.instagram.com/judeshuma/">Instagram</a></p>
+    <p><a class="links" href="https://www.youtube.com/channel/UCqBOp92JShjL2Tml2UiiWJA">Youtube</a></p>
+    <p><a class="links" href="https://www.linkedin.com/in/judeshuma/">Linked</a></p>
+    <p><a class="links" href="https://open.spotify.com/artist/3CkNneXMjQdZ3cMGYLfWke?si=uZ1WrL-VQkCr6ovyCwydGA/">Spotify</a></p>
+    <p><a class="links" href="https://www.facebook.com/judeshumamusic/">FBook</a></p>
+    <p><a class="links" href="https://github.com/judeshuma">Github</a></p>
+    <p>shumajude@gmail.com</p>
+  </div>
+</footer>
+
+
+    <!-- Javascript -->
+    <!--<script type="module" src="./js/app.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+
+  </body>
+  </html>
