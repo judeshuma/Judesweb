@@ -119,6 +119,9 @@ img {
         padding-left: 150px; 
         padding-right: 150px;
     }
+    .midmusic {
+        gap: 200px;
+    }
     .aboutmebody {
         padding-left: 350px;
         padding-right: 350px;
@@ -163,6 +166,9 @@ img {
         padding-left: 150px; 
         padding-right: 150px;
     }
+    .midmusic {
+        gap: 200px;
+    }
     .aboutmebody {
         padding-left: 350px;
         padding-right: 350px;
@@ -206,6 +212,9 @@ img {
         padding-left: 150px; 
         padding-right: 150px;
     }
+    .midmusic {
+        gap: 200px;
+    }
     .aboutmebody {
         padding-left: 350px;
         padding-right: 350px;
@@ -248,6 +257,9 @@ img {
     .musicbody {
         padding-left: 150px; 
         padding-right: 150px;
+    }
+    .midmusic {
+        gap: 200px;
     }
     .aboutmebody {
         padding-left: 350px;
@@ -294,6 +306,9 @@ img {
     .musicbody {
         padding-left: 100px; 
         padding-right: 100px;
+    }
+    .midmusic {
+        gap: 200px;
     }
     .aboutmebody {
         padding-left: 250px;
@@ -346,6 +361,9 @@ img {
         padding-left: 50px; 
         padding-right: 50px;
     }
+    .midmusic {
+        gap: 100px;
+    }
     #rainerquote {
         margin-left: 70px;
         margin-right: 100px;
@@ -391,6 +409,9 @@ img {
     .musicbody {
         padding-left: 50px; 
         padding-right: 50px;
+    }
+    .midmusic {
+        gap: 50px;
     }
     .aboutmebody {
         padding-left: 50px;
@@ -459,6 +480,9 @@ img {
     .musicbody {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .midmusic {
+        gap: 0px;
     }
     .aboutmebody {
         padding-left: 35px;
@@ -707,33 +731,26 @@ ul {
 }
 .midmusic {
     display: inline-flex;
-}
-.spotifygooglebox {
-    display: flex;
-    justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
-}
-.spotifyplayer {
-    display: flex;
-    flex-direction: wrap;
-    justify-content: center;
     width: 100%;
-    padding: 50px;
-    min-width: 375px;
+    justify-content: center;
+    align-items: center;
 }
-.googlead {
-    grid-template-columns: 1fr 1fr;
-    width: 100%;   
+.midmusicleft {
+    justify-self: center;
+    align-items: center;
+}
+.midmusicleft h2 {
     justify-content: center;
     text-align: center;
-}
-.googlead h2 {
     font-family: Archivo Black;
-    width: 100%;
 }
-.googlead p {
-    width: 100%;
+.midmusicright {
+    justify-self: center;
+    align-items: center;
+}
+.midmusicright > p {
+    color: #EE96A2;
 }
 .vimeoheader {
     display: block;
