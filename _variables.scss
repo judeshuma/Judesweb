@@ -27,17 +27,6 @@ img {
     color:#ff8282;
     background-color: #000000;
 }
-.containerheader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Archivo Black;
-    height: 350px;
-    padding: 20px;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    border-top: .2px solid black;
-}
 /* Home page CSS starts here ------------------------------------ */
 
 @media (max-width: 2000px) {
@@ -550,7 +539,6 @@ body {
     animation-name: changeColor;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    
 }
 @keyframes changeColor {
     0% {
@@ -569,12 +557,44 @@ body {
   }
 
 /* blog page css starts here ------------------------------------ ------------------------------------  */
+.containerheader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Archivo Black;
+    height: auto;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    border-top: .2px solid black;
+}
+#blogborder {
+    display: flex;
+    width: 55%;
+    border-top: 1px solid black;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    opacity: .5;
+}
+#blogborder2 {
+    display: flex;
+    width: 55%;
+    border-top: 1px solid black;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    opacity: .5;
+}
+
 .blogintrocontainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding:4%;
 }
 .blogintro {
     flex-direction: row;
@@ -598,6 +618,36 @@ body {
     height: auto;
     padding: 20px;
 } 
+.qoute {
+    display: flex;
+    width: 100%;
+}
+.quote > h1 {
+    display: flex;
+    font-family: Montserrat;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+}
+.quote2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+    opacity: .3;
+    margin-bottom: 5px;
+}
+.quote2 h2{
+    flex: 0;
+    display: flex;
+    font-family: Montserrat;
+    margin-top: 0px;
+    width: 100%;
+    text-wrap: nowrap;
+}
 .blogposts {
     display: flex;
     flex-wrap: wrap;
@@ -614,26 +664,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
 }
 .card img {
     height: 150px;
     width: 100%;
-    
 }
-.qoute {
-    display: flex;
-    width: 100%;
-}
-.quote > h1 {
-    display: flex;
-    font-family: Montserrat;
-    justify-content: center;
-    text-align: center;
-    margin-top: 0px;
-    padding: 20px;
-    
-}
+
 
 /* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
 .containerblog {
@@ -699,6 +735,7 @@ body {
     justify-content: center;
     text-align: center;
     margin-bottom: 50px;
+    
 }
 .codesnippet {
     display: flex;
