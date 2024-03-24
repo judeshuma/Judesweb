@@ -808,7 +808,7 @@ ul {
 
 /* Design page CSS starts here ------------------------------------ ------------------------------------  */
 .designcontent {
-  margin-top: 50;
+  margin-top: 0;
 }
 
 .designimg {
@@ -841,8 +841,8 @@ img:hover {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  padding: 50px;
-  margin-top: 40px;
+  padding: 0px;
+  margin-top: 0px;
   width: 100%;
 }
 
