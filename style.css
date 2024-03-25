@@ -15,6 +15,10 @@ img {
   font-family: "Montserrat", sans-serif;
 }
 
+.nav-link {
+  text-wrap: nowrap;
+}
+
 .nav-link a:active {
   background-color: rgb(0, 0, 0);
   color: #fe7c7c;
@@ -23,6 +27,17 @@ img {
 .navbar-nav a:hover {
   color: #ff8282;
   background-color: #000000;
+}
+
+.containerheader {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Archivo Black;
+  height: auto;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  border-top: 0.2px solid black;
 }
 
 /* Home page CSS starts here ------------------------------------ */
@@ -550,17 +565,6 @@ body {
   }
 }
 /* blog page css starts here ------------------------------------ ------------------------------------  */
-.containerheader {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: Archivo Black;
-  height: auto;
-  width: 100%;
-  color: rgb(0, 0, 0);
-  border-top: 0.2px solid black;
-}
-
 #blogborder {
   display: flex;
   width: 55%;
@@ -937,39 +941,54 @@ li {
 }
 
 /* ABOUT ME CSS STARTS HERE ------------------------------------ */
-.aboutme {
-  display: block;
+.banner {
+  position: relative;
   width: 100%;
+  height: 100vh;
+  text-align: right;
+  overflow: hidden;
+  justify-content: center;
+}
+
+#tvStatic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#aboutme {
+  display: flex;
   justify-content: center;
   text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-.about_me_photos img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  gap: 10px;
-  display: inline-block;
-  height: 150px;
-  width: 150px;
-}
-
-.aboutme2 {
-  width: 1200px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50px;
+.aboutme {
   margin-top: 50px;
+  display: block;
+  height: auto;
+  width: 100%;
+  text-align: justify;
 }
 
-.aboutme > p {
+.aboutmebody {
   justify-content: center;
-  margin-top: 100px;
+  display: flex;
+  width: 100%;
 }
 
-.aboutme2 > p > img {
-  width: 250px;
-  height: 250px;
-  padding: 20px;
+.aboutmebody p {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
 }
 
 /* COMMENT CSS STARTS HERE -----------------------------------------*/
@@ -997,7 +1016,7 @@ footer > h3 {
   height: 200px;
   -o-object-fit: contain;
      object-fit: contain;
-  background-color: #EE96A2;
+  background-color: #f1f1f1;
   height: auto;
 }
 
