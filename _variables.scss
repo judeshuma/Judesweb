@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wdth,wght@97.1,100..800&family=Comfortaa:wght@300..700&family=Handjet:wght@100..900&display=swap');
 
 $primary: black;
-
+$light: white;
 $dark: black;
 
 /* Global Settings  ------------------------------------ ------------------------------------   */
@@ -40,8 +40,22 @@ img {
     color: rgb(0, 0, 0);
     border-top: .2px solid black;
 }
-/* Home page CSS starts here ------------------------------------ */
+#judesWeb {
+    display:flex;  
+    color: white;
+    width: 100%; 
+    overflow: hidden;
 
+}
+/* Home page CSS starts here ------------------------------------ */
+@media (max-width: 3000px) {
+    body.home {
+        background-image: url(judeswebBG.jpeg);
+    }
+    .header {
+        font-size: 2rem;
+    }
+}
 @media (max-width: 2000px) {
     body.home {
         background-image: url(judeswebBG.jpeg);
@@ -86,6 +100,59 @@ img {
     }
 }
 /* ------------------ ALL OTHER PAGES QUERIES -------------- */
+@media (max-width: 3000px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 225px;
+    }
+    #design {
+        font-size: 300px;
+    }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .blogposttext {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .blogposttext > p {
+        font-size: 13pt;
+    }
+    #blogheader {
+        padding-left: 500px;
+        padding-right: 500px;
+        
+    }
+    .musicbody {
+        padding-left: 150px; 
+        padding-right: 150px;
+    }
+    .midmusic {
+        gap: 200px;
+    }
+    .aboutmebody {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+    #rainerquote {
+        margin-left: 300px;
+        margin-right: 300px;
+    } 
+    #blogheader2 {
+        font-size: 85px;
+    }
+    #judesWeb {
+        font-size: 650px;
+    }
+
+}    
 @media (max-width: 2750px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
@@ -133,6 +200,9 @@ img {
     } 
     #blogheader2 {
         font-size: 85px;
+    }
+    #judesWeb {
+        font-size: 590px;
     }
 }
 
@@ -185,6 +255,9 @@ img {
     #blogheader2 {
         font-size: 85px;
     }
+    #judesWeb {
+        font-size: 500px;
+    }
 }
 @media (max-width: 2050px) {
     body.bloggy {
@@ -234,6 +307,9 @@ img {
     #rainerquote {
         margin-left: 150px;
         margin-right: 150px;
+    }
+    #judesWeb {
+        font-size: 400px;
     }  
 }
 @media (max-width: 1750px) {
@@ -284,6 +360,9 @@ img {
         margin-left: 100px;
         margin-right: 100px;
     } 
+    #judesWeb {
+        font-size: 300px;
+    }  
 }
 @media (max-width: 1375px) {
     body.bloggy {
@@ -337,6 +416,9 @@ img {
         margin-left: 100px;
         margin-right: 100px;
     } 
+    #judesWeb {
+        font-size: 200px;
+    }  
 }
 @media (max-width: 1150px) {
     #aboutme {
@@ -395,6 +477,9 @@ img {
         padding-left: 70px;
         padding-right: 100px;
     }
+    #judesWeb {
+        font-size: 170px;
+    }  
 }    
 @media (max-width: 770px) {
     body.bloggy {
@@ -448,6 +533,9 @@ img {
         margin-left: 50px;
         margin-right: 50px;
     }
+    #judesWeb {
+        font-size: 150px;
+    }  
 }    
 @media (max-width: 630px) {
      .containerheader > p {
@@ -526,6 +614,9 @@ img {
         margin-left: 20px;
         margin-right: 20px;
     }    
+    #judesWeb {
+        font-size: 80px;
+    }  
 }
 /* ------------------ Homepage CSS starts here -------------- */
 body {
@@ -668,10 +759,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    border-radius: 0px;
+    
 }
 .card img {
     height: 150px;
     width: 100%;
+
 }
 
 
@@ -791,33 +885,25 @@ ul {
     height: auto;
 }
   /* Design page CSS starts here ------------------------------------ ------------------------------------  */
-.designcontent {
-    margin-top: 0;
-}
-.designimg {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    min-width: 275px;
-}
-.designimg {
-    --b: 5px; /* border thickness */
-    --c: #EE96A2 15%,rgb(0, 0, 0) 0; /* define the color here - original was all black 25%*/
-    padding: 10px;
-    background:
-      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
-      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
-      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
-      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
-    background-size: 50px 50px; /* adjust border length here */
-    background-repeat: no-repeat;
-    transition: .6s;
-    cursor: pointer;
+
+  .designPage {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
   }
-  img:hover {
-    background-size: 51% 51%;
+  .designimages {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex: 1;
+    height: auto;
+    gap: 50px;
+  }
+  .designimages * {
+    width: 300px;
+    height: 100%;
+   
   }
 /* Music Page CSS Starts Here  ----------------------------------------------------- */
 
@@ -826,7 +912,6 @@ ul {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap; 
-    padding: 0px;
     margin-top: 0px;
     width: 100%;
 }
