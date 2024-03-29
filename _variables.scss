@@ -580,14 +580,14 @@ img {
         font-size: 50px;
     }
     #design {
-        font-size: 70px;
+        font-size: 80px;
     }
     .designimg {
         width: 150px;
         height: 150px;
     }
     #music {
-        font-size: 80px;
+        font-size: 85px;
     }
     .blogposts {
         margin-left: 10px;
@@ -632,7 +632,7 @@ img {
         margin-right: 20px;
     }    
     #judesWeb {
-        font-size: 70px;
+        font-size: 65px;
         margin-top: -28px;
     }  
 }
@@ -1006,6 +1006,7 @@ ul {
 .vimeoheader {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-family: Archivo Black;
     width: 100%;
     margin-top: 50px;
