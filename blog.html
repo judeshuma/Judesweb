@@ -9,17 +9,18 @@
       gtag('js', new Date());
       gtag('config', 'G-NTZR5NT769');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JudesWeb</title>
-    <!-- Styles -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hi my name is Jude Shuma, I'm a programmer, musician, and designer. Welcome to Judesweb. Open 24 hours a day, 8 days a week.">
+        <title>JudesWeb</title>
+        <!-- Styles -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/style.scss">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -88,136 +89,185 @@
     </p>
   </div>
   <div class="blogintro2">
-    <img src="./images/typewriter.jpeg" alt="">
+    <img id="typewriter" src="./images/typewriter.jpeg" alt="">
   </div>
 </div>
 <div id="blogborder"></div>
 <div id="blogborder2"></div>
 <div class="quote"><h1>The Art of Consistent Growth</h1></div>  
-<div class="quote2">
-  <h2>Tech</h2>
-  <h2>Art</h2>
-  <h2>Self</h2>
+<div class="quote2" id="myButtonContainer">
+  <button class="btn" onclick="filterSelection('all')">Show All</button>
+  <button class="btn" onclick="filterSelection('tech')">Tech</button>
+  <button class="btn" onclick="filterSelection('art')">Art</button>
+  <button class="btn" onclick="filterSelection('self')">Self</button>
 </div>  
 <hr>
 <div class="blogposts">
+<div class="postBlog tech self">
   <div class="card" style="width: 15rem;">
     <a href="rightQuestion.html"><img src="./images/einstein.jpeg" class="card-img-top" alt=""></a>
     <div class="card-body">
       <h5 class="card-title">The Low-Key Art of Asking The Right Questions</h5>
       <p class="card-text"><p class="dated"><b>03.29.24</b></p>Trust, communication, critical thinking, problem-solving, and decision-making all stem from one thing: Questions.</p>
+      <p class="post-tag">Tech</p>
+      <p class="post-tag">Self</p>
     </div>
   </div>
-  <!-- <div class="card" style="width: 15rem;">
-    <a href="worry.html"><img src="./images/chess.jpeg" class="card-img-top" alt=""></a>
-    <div class="card-body">
-      <h5 class="card-title">Chess Is Helping Sharpen My Problem Solving Skills</h5>
-      <p class="card-text"><p class="dated"><b>03.29.24</b></p>Thinking ahead, not rushing your decisions, and weighing the pros & cons of your choices.</p>
-    </div>
-  </div> -->
+</div>
+<div class="postBlog self">
   <div class="card" style="width: 15rem;">
     <a href="worry.html"><img src="./images/worry.jpeg" class="card-img-top" alt=""></a>
     <div class="card-body">
       <h5 class="card-title">Unf*ck Yourself: Getting Rid of Toxic Worry to Better Your Life</h5>
       <p class="card-text"><p class="dated"><b>03.28.24</b></p>Accepting that most things in life are not in our direct control. So why worry? </p>
+      <p class="post-tag">Self</p>
     </div>
   </div>
-  <!-- <div class="card" style="width: 15rem;">
-    <a href="niche.html"><img src="./images/firebrain.jpeg" class="card-img-top" alt=""></a>
-    <div class="card-body">
-      <h5 class="card-title">Why Your Attitude Sucks and What You Can Do About It</h5>
-      <p class="card-text"><p class="dated"><b>03.27.24</b></p>How we look at life dictates our experience. Are you the glass half-empty or glass half-full type?</p>
-    </div>
-  </div>  -->
+</div>
+<div class="postBlog art">
   <div class="card" style="width: 15rem;">
     <a href="niche.html"><img src="./images/spotify.png" class="card-img-top" alt=""></a>
     <div class="card-body">
       <h5 class="card-title">Using Spotify Data Points & Algorithms to Help Find Your Niche Market</h5>
       <p class="card-text"><p class="dated"><b>03.26.24</b></p>Spotify Data & Algorithms To Find Where You Lie In The Music Industry.</p>
+      <p class="post-tag">Art</p>
     </div>
   </div> 
+</div>  
+<div class="postBlog tech art">
   <div class="card" style="width: 15rem;">
     <a href="verbasizer.html"><img src="./images/davidbowie.jpeg" class="card-img-top" alt=""></a>
     <div class="card-body">
       <h5 class="card-title">David Bowie and His Magical "Verbasizer"</h5>
       <p class="card-text"><p class="dated"><b>03.23.24</b></p>Predating AI in music production was David Bowie's Mac App the "Verbasizer".</p>
+      <p class="post-tag">Tech</p>
+      <p class="post-tag">Art</p>
     </div>
   </div> 
-    <div class="card" style="width: 15rem;">
-      <a href="cssblur.html"><img src="./images/cssblur.jpeg" class="card-img-top" alt="Blurred CSS"></a>
-      <div class="card-body">
-        <h5 class="card-title">CSS Animation Tricks: Text Blurred to Focus and Rotating Objects</h5>
-        <p class="card-text"><p class="dated"><b>03.21.24</b></p>Incorporating animation can be the key to making your website pop.</p>
-      </div>
-    </div> 
+</div>
+<div class="postBlog tech">
+  <div class="card" style="width: 15rem;">
+    <a href="cssblur.html"><img src="./images/cssblur.jpeg" class="card-img-top" alt="Blurred CSS"></a>
+    <div class="card-body">
+      <h5 class="card-title">CSS Animation Tricks: Text Blurred to Focus and Rotating Objects</h5>
+      <p class="card-text"><p class="dated"><b>03.21.24</b></p>Incorporating animation can be the key to making your website pop.</p>
+      <p class="post-tag">Tech</p>
+    </div>
+  </div> 
+</div>
+<div class="postBlog tech self">
   <div class="card" style="width: 15rem;">
     <a href="startover.html"><img src="./images/reset3.jpeg" class="card-img-top" alt="Reset Button"></a>
     <div class="card-body">
       <h5 class="card-title">Is It Ever Too Late To Start Over?</h5>
       <p class="card-text"><p class="dated"><b>03.19.24</b></p>It's never too late to begin something new and start over.</p>
+      <p class="post-tag">Tech</p>
+      <p class="post-tag">Self</p>
     </div>
   </div>
+</div>
+<div class="postBlog self tech">
   <div class="card" style="width: 15rem;">
     <a href="expectations.html"><img src="./images/disappointment.jpeg" class="card-img-top" alt="Disappointment Chart"></a>
     <div class="card-body">
       <h5 class="card-title">Managing Expectations: The Key To Happiness</h5>
       <p class="card-text"><p class="dated"><b>03.15.24</b></p>The correlation between the expectations we set and our overall happiness.</p>
+      <p class="post-tag">Self</p>
     </div>
   </div>
+</div>
+<div class="postBlog self tech">
   <div class="card" style="width: 15rem;">
     <a href="problem.html"><img src="./images/problems.jpeg" class="card-img-top" alt="Problems"></a>
     <div class="card-body">
       <h5 class="card-title">It's Not The Problem Itself, It's How We React</h5>
       <p class="card-text"><p class="dated"><b>03.11.24</b></p>Life is 1% what happens to us, the other 99% is how we react.</p>
+      <p class="post-tag">Self</p>
+      <p class="post-tag">Tech</p>
     </div>
   </div>
-  <!-- <div class="card" style="width: 15rem;">
-    <a href="#"><img src="./images/musician.jpeg" class="card-img-top" alt=""></a>
-    <div class="card-body">
-      <h5 class="card-title">Musicians as Programmers</h5>
-      <p class="card-text"><p class="dated"><b>02.29.24</b></p>True or False?</p>
+</div>
+<div class="postBlog tech">
+    <div class="card" style="width: 15rem;">
+      <a href="lampstack.html"><img src="./images/LAMPstack.jpeg" class="card-img-top" alt="Modern Lamp"></a>
+      <div class="card-body">
+        <h5 class="card-title">Deploying Your First LAMP Stack</h5>
+        <p class="card-text"><p class="dated"><b>03.10.24</b></p>You're ready to deploy your first "Hello World" to the web.</p>
+        <p class="post-tag">Tech</p>
+      </div>
     </div>
-  </div>  -->
+</div>
+<div class="postBlog tech">
   <div class="card" style="width: 15rem;">
-    <a href="lampstack.html"><img src="./images/LAMPstack.jpeg" class="card-img-top" alt="Modern Lamp"></a>
-    <div class="card-body">
-      <h5 class="card-title">Deploying Your First LAMP Stack</h5>
-      <p class="card-text"><p class="dated"><b>03.10.24</b></p>You're ready to deploy your first "Hello World" to the web.</p>
-    </div>
-  </div><div class="card" style="width: 15rem;">
     <a href="SSH.html"><img src="./images/ssh.jpeg" class="card-img-top" alt="SSH Logo"></a>
     <div class="card-body">
       <h5 class="card-title">An Extremely Brief Introduction to SSH</h5>
       <p class="card-text"><p class="dated"><b>03.07.24</b></p>What is SSH and how do we use it?</p>
+      <p class="post-tag">Tech</p>
     </div>
-  </div><div class="card" style="width: 15rem;">
+  </div>
+</div>
+<div class="postBlog tech">
+  <div class="card" style="width: 15rem;">
     <a href="linux.html"><img src="./images/1980s_lab_.jpeg" class="card-img-top" alt="1980s Computer Lab"></a>
     <div class="card-body">
       <h5 class="card-title">Free Resources For Learning Linux</h5>
       <p class="card-text"><p class="dated"><b>03.01.24</b></p>You are interested in getting started with Linux? This is for you.</p>
+      <p class="post-tag">Tech</p>
     </div>
   </div>
-  <!-- <div class="card" style="width: 15rem;">
-    <a href="#"><img src="./images/growth.jpeg" class="card-img-top" alt=""></a>
-    <div class="card-body">
-      <h5 class="card-title">The Growth Mindset And Why It's Important</h5>
-      <p class="card-text"><p class="dated"><b>02.29.24</b></p>Forever evolving or stuck in the rut of one's comfort zone...Which one are you?</p>
-    </div>
-  </div>
-  <div class="card" style="width: 15rem;">
-    <a href="#"><img src="./images/niche.jpeg" class="card-img-top" alt=""></a>
-    <div class="card-body">
-      <h5 class="card-title">The Importance Of Finding Your Niche Market</h5>
-      <p class="card-text"><p class="dated"><b>02.20.24</b></p>By defining a niche market we can really hone in on who we want to connect with and how.</p>
-    </div>
-  </div><div class="card" style="width: 15rem;">
-    <a href="#"><img src="./images/minimal.jpeg" class="card-img-top" alt=""></a>
-    <div class="card-body">
-      <h5 class="card-title">Minimalism Applied to Life</h5>
-      <p class="card-text"><p class="dated"><b>02.15.24</b></p>Leading a minimalistic lifestyle to attain total nirvana.</p>
-    </div>
-  </div> -->
-</div> 
+</div>  
+</div>
+
+<script>
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("postBlog");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+var btnContainer = document.getElementById("myButtonContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
 
 <footer>
   <h3>JudesWeb</h3>
@@ -240,6 +290,8 @@
   
     
   <!-- Javascript -->
+  <script type="module" src="./js/app.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

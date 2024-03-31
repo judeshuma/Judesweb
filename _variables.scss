@@ -49,57 +49,57 @@ img {
     font-family: Archivo Black;
 }
 /* Home page CSS starts here ------------------------------------ */
-@media (max-width: 3000px) {
-    body.home {
-        background-image: url(judeswebBG.jpeg);
-    }
-    .header {
-        font-size: 2rem;
-    }
-}
-@media (max-width: 2000px) {
-    body.home {
-        background-image: url(judeswebBG.jpeg);
-    }
-    .header {
-        font-size: 2rem;
-    }
-}
-@media (max-width: 1450px) {
-    body.home {
-        background-image: url(judeswebBG.jpeg);
-    }
-    .header {
-        font-size: 1.8rem;
-    }
-}
-@media (max-width: 1100px) {
-    body.home {
-        background-image: url(judeswebBG.jpeg);
-        width: 100%;
-    }
-    .mainheader {
-        font-size: 1.5rem;
-    }
-}
-@media (max-width: 950px) {
-    body.home {
-        background-image: url(judeswebBG.jpeg);
-        width: 100%;
-    }
-    .mainheader {
-        font-size: 1.2rem;
-    }
-}    
-@media (max-width: 600px) {
-    body.home {
-        background-image: url(judeswebBG.jpeg);
-        width: 100%;
-    }
-    .mainheader {
-        font-size: 1rem;
-    }
-}
+// @media (max-width: 3000px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//     }
+//     .header {
+//         font-size: 2rem;
+//     }
+// }
+// @media (max-width: 2000px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//     }
+//     .header {
+//         font-size: 2rem;
+//     }
+// }
+// @media (max-width: 1450px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//     }
+//     .header {
+//         font-size: 1.8rem;
+//     }
+// }
+// @media (max-width: 1100px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//         width: 100%;
+//     }
+//     .mainheader {
+//         font-size: 1.5rem;
+//     }
+// }
+// @media (max-width: 950px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//         width: 100%;
+//     }
+//     .mainheader {
+//         font-size: 1.2rem;
+//     }
+// }    
+// @media (max-width: 600px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//         width: 100%;
+//     }
+//     .mainheader {
+//         font-size: 1rem;
+//     }
+// }
 /* ------------------ ALL OTHER PAGES QUERIES -------------- */
 @media (max-width: 3000px) {
     body.bloggy {
@@ -637,6 +637,9 @@ img {
     }  
 }
 /* ------------------ Homepage CSS starts here -------------- */
+.home {
+    background-color: black;
+}
 body {
     margin: 0;
     padding: 0;  
@@ -645,6 +648,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     width: 100%;
+    background-color: black;
 }
 .mainheader {
     display: flex;
@@ -750,16 +754,22 @@ body {
     height: auto;
     padding: 10px;
     gap: 20px;
-    opacity: .3;
+    opacity: .6;
     margin-bottom: 5px;
 }
-.quote2 h2{
+.quote2 button {
+    padding: 5px 10px;
     flex: 0;
     display: flex;
     font-family: Montserrat;
     margin-top: 0px;
-    width: 100%;
     text-wrap: nowrap;
+    color: #a4a4a4;
+    border: .5px solid black;
+    border-radius: 2px;
+}
+.quote2 button:hover {
+    color: black;
 }
 .blogposts {
     display: flex;
@@ -769,23 +779,77 @@ body {
     gap: 30px;
     margin-top: 50px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
+.postBlog {
+    float: left;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
+
+.show {
+display: flex;
+}
+.btn.active {
+    background-color: #666;
+    color: white;
+  }
+// .blogposts {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 30px;
+//     margin-top: 50px;
+//     margin-bottom: 20px;
+//     overflow: hidden;
+// }
+// .post {
+//     margin: 2px;
+//     display: flex
+//   }
+
+// .show {
+// display: block;
+// }
+
 .dated {
+    display: flex;
+    width: 30%;
+    font-size: 9pt;
     color: #EE96A2;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+.card-text {
+    text-align: justify;
+    
 }
 .card {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     border-radius: 0px;
-    
-    
 }
 .card img {
     height: auto;
     width: 100%;
-
 }
+.post-tag {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    border-radius:2px;
+    width: 50px;
+    background-color: rgb(230, 230, 230);
+    padding: 2px;
+    opacity: .2;
+}
+
 
 
 /* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
