@@ -48,6 +48,30 @@ img {
     margin-top: -150px;
     font-family: Archivo Black;
 }
+#blurb {
+    display:flex;  
+    color: white;
+    width: 100%; 
+    overflow: hidden;
+    margin-top: 4%;
+    font-family: Archivo Black;
+    font-size: 15pt;
+    text-decoration: underline #fe7c7c;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 20px;
+}
+.recentPosts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    
+}
+
+
 /* Home page CSS starts here ------------------------------------ */
 // @media (max-width: 3000px) {
 //     body.home {
@@ -788,29 +812,10 @@ body {
 .show {
 display: flex;
 }
-.btn.active {
+.btn:active {
     background-color: #666;
     color: white;
   }
-// .blogposts {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 30px;
-//     margin-top: 50px;
-//     margin-bottom: 20px;
-//     overflow: hidden;
-// }
-// .post {
-//     margin: 2px;
-//     display: flex
-//   }
-
-// .show {
-// display: block;
-// }
-
 .dated {
     display: flex;
     width: 30%;
@@ -876,7 +881,6 @@ display: flex;
     margin-top: 50px;
     padding: 35px;
     background-color: none;
-    
 }
 .blogposttext {
     font-family: sans-serif;
@@ -895,7 +899,6 @@ display: flex;
 .blogdate {
     float: right;
     color: #EE96A2;
-
 }
 .blogimg {
     display: flex;
@@ -920,7 +923,6 @@ display: flex;
     justify-content: center;
     text-align: center;
     margin-bottom: 50px;
-    
 }
 .codesnippet {
     display: flex;
