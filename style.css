@@ -45,61 +45,35 @@ img {
   color: white;
   width: 100%;
   overflow: hidden;
-  margin-top: 0px;
+  margin-top: -150px;
+  font-family: Archivo Black;
+}
+
+#blurb {
+  display: flex;
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 4%;
+  font-family: Archivo Black;
+  font-size: 15pt;
+  -webkit-text-decoration: underline #fe7c7c;
+          text-decoration: underline #fe7c7c;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 20px;
+}
+
+.recentPosts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  gap: 20px;
 }
 
 /* Home page CSS starts here ------------------------------------ */
-@media (max-width: 3000px) {
-  body.home {
-    background-image: url(judeswebBG.jpeg);
-  }
-  .header {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 2000px) {
-  body.home {
-    background-image: url(judeswebBG.jpeg);
-  }
-  .header {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 1450px) {
-  body.home {
-    background-image: url(judeswebBG.jpeg);
-  }
-  .header {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 1100px) {
-  body.home {
-    background-image: url(judeswebBG.jpeg);
-    width: 100%;
-  }
-  .mainheader {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 950px) {
-  body.home {
-    background-image: url(judeswebBG.jpeg);
-    width: 100%;
-  }
-  .mainheader {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 600px) {
-  body.home {
-    background-image: url(judeswebBG.jpeg);
-    width: 100%;
-  }
-  .mainheader {
-    font-size: 1rem;
-  }
-}
 /* ------------------ ALL OTHER PAGES QUERIES -------------- */
 @media (max-width: 3000px) {
   body.bloggy {
@@ -130,6 +104,10 @@ img {
     padding-left: 500px;
     padding-right: 500px;
   }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
+  }
   .musicbody {
     padding-left: 150px;
     padding-right: 150px;
@@ -149,7 +127,8 @@ img {
     font-size: 85px;
   }
   #judesWeb {
-    font-size: 650px;
+    font-size: 500px;
+    margin-top: -210px;
   }
 }
 @media (max-width: 2750px) {
@@ -181,6 +160,10 @@ img {
     padding-left: 500px;
     padding-right: 500px;
   }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
+  }
   .musicbody {
     padding-left: 150px;
     padding-right: 150px;
@@ -200,7 +183,8 @@ img {
     font-size: 85px;
   }
   #judesWeb {
-    font-size: 590px;
+    font-size: 450px;
+    margin-top: -190px;
   }
 }
 @media (max-width: 2450px) {
@@ -232,6 +216,10 @@ img {
     padding-left: 450px;
     padding-right: 450px;
   }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
+  }
   .musicbody {
     padding-left: 150px;
     padding-right: 150px;
@@ -252,7 +240,8 @@ img {
     font-size: 85px;
   }
   #judesWeb {
-    font-size: 500px;
+    font-size: 390px;
+    margin-top: -170px;
   }
 }
 @media (max-width: 2050px) {
@@ -284,6 +273,10 @@ img {
     padding-left: 350px;
     padding-right: 350px;
   }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
+  }
   #blogheader2 {
     font-size: 85px;
   }
@@ -304,7 +297,8 @@ img {
     margin-right: 150px;
   }
   #judesWeb {
-    font-size: 400px;
+    font-size: 300px;
+    margin-top: -120px;
   }
 }
 @media (max-width: 1750px) {
@@ -336,6 +330,10 @@ img {
     padding-left: 200px;
     padding-right: 200px;
   }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
+  }
   #blogheader2 {
     font-size: 85px;
   }
@@ -356,7 +354,8 @@ img {
     margin-right: 100px;
   }
   #judesWeb {
-    font-size: 300px;
+    font-size: 250px;
+    margin-top: -100px;
   }
 }
 @media (max-width: 1375px) {
@@ -395,6 +394,10 @@ img {
   #blogheader2 {
     font-size: 65px;
   }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
+  }
   .musicbody {
     padding-left: 100px;
     padding-right: 100px;
@@ -413,11 +416,16 @@ img {
   }
   #judesWeb {
     font-size: 200px;
+    margin-top: -90px;
   }
 }
 @media (max-width: 1150px) {
   #aboutme {
     font-size: 150px;
+  }
+  #judesWeb {
+    font-size: 180px;
+    margin-top: -80px;
   }
 }
 @media (max-width: 990px) {
@@ -444,6 +452,10 @@ img {
   }
   #blogheader2 {
     font-size: 45px;
+  }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
   }
   .blogposts {
     margin-left: 50px;
@@ -473,7 +485,8 @@ img {
     padding-right: 100px;
   }
   #judesWeb {
-    font-size: 170px;
+    font-size: 150px;
+    margin-top: -60px;
   }
 }
 @media (max-width: 770px) {
@@ -512,6 +525,10 @@ img {
   #blogheader2 {
     font-size: 35px;
   }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
+  }
   .musicbody {
     padding-left: 50px;
     padding-right: 50px;
@@ -529,7 +546,8 @@ img {
     margin-right: 50px;
   }
   #judesWeb {
-    font-size: 150px;
+    font-size: 120px;
+    margin-top: -50px;
   }
 }
 @media (max-width: 630px) {
@@ -544,6 +562,14 @@ img {
     padding-right: 75px;
     font-size: 30px;
   }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
+  }
+  #judesWeb {
+    font-size: 95px;
+    margin-top: -40px;
+  }
 }
 @media (max-width: 520px) {
   body.bloggy {
@@ -557,14 +583,14 @@ img {
     font-size: 50px;
   }
   #design {
-    font-size: 70px;
+    font-size: 80px;
   }
   .designimg {
     width: 150px;
     height: 150px;
   }
   #music {
-    font-size: 80px;
+    font-size: 85px;
   }
   .blogposts {
     margin-left: 10px;
@@ -584,6 +610,10 @@ img {
   }
   #blogheader2 {
     font-size: 22.5px;
+  }
+  #blurb {
+    -webkit-text-decoration: underline #fe7c7c;
+            text-decoration: underline #fe7c7c;
   }
   .musicbody {
     padding-left: 50px;
@@ -609,10 +639,15 @@ img {
     margin-right: 20px;
   }
   #judesWeb {
-    font-size: 80px;
+    font-size: 65px;
+    margin-top: -28px;
   }
 }
 /* ------------------ Homepage CSS starts here -------------- */
+.home {
+  background-color: black;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -621,6 +656,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   width: 100%;
+  background-color: black;
 }
 
 .mainheader {
@@ -734,17 +770,24 @@ body {
   height: auto;
   padding: 10px;
   gap: 20px;
-  opacity: 0.3;
+  opacity: 0.6;
   margin-bottom: 5px;
 }
 
-.quote2 h2 {
+.quote2 button {
+  padding: 5px 10px;
   flex: 0;
   display: flex;
   font-family: Montserrat;
   margin-top: 0px;
-  width: 100%;
   text-wrap: nowrap;
+  color: #a4a4a4;
+  border: 0.5px solid black;
+  border-radius: 2px;
+}
+
+.quote2 button:hover {
+  color: black;
 }
 
 .blogposts {
@@ -755,10 +798,33 @@ body {
   gap: 30px;
   margin-top: 50px;
   margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.postBlog {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.btn:active {
+  background-color: #666;
+  color: white;
 }
 
 .dated {
+  display: flex;
+  width: 30%;
+  font-size: 9pt;
   color: #EE96A2;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  text-align: justify;
 }
 
 .card {
@@ -769,8 +835,19 @@ body {
 }
 
 .card img {
-  height: 150px;
+  height: auto;
   width: 100%;
+}
+
+.post-tag {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 50px;
+  background-color: rgb(230, 230, 230);
+  padding: 2px;
+  opacity: 0.2;
 }
 
 /* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
@@ -840,6 +917,17 @@ body {
   align-items: center;
 }
 
+.blogimg2 {
+  display: flex;
+  width: 340px;
+  height: auto;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #blogheader {
   display: flex;
   justify-content: center;
@@ -904,7 +992,10 @@ ul {
 
 /* Design page CSS starts here ------------------------------------ ------------------------------------  */
 #design {
-  background-image: url();
+  background-image: url(https://pyxis.nymag.com/v1/imgs/117/ebe/e4188d66c1e3b4f7e76cc112d42310f886-05-richard-prince-lede.2x.rhorizontal.w700.jpg);
+  background-size: 100% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .designPage {
@@ -929,6 +1020,20 @@ ul {
 }
 
 /* Music Page CSS Starts Here  ----------------------------------------------------- */
+.musicbody {
+  margin-top: 50px;
+}
+
+.musicTop {
+  display: flex;
+  width: 100%;
+  border: 1 px solid black;
+}
+
+.spotifyPlayer {
+  width: 100%;
+}
+
 .musicphotobox {
   display: flex;
   justify-content: center;
@@ -936,6 +1041,8 @@ ul {
   flex-wrap: wrap;
   margin-top: 0px;
   width: 100%;
+  height: auto;
+  gap: 50px;
 }
 
 .musicphotobox img {
@@ -943,6 +1050,7 @@ ul {
   height: 250px;
   padding: 5px;
   background-color: #EE96A2;
+  border: 0px solid black;
 }
 
 .midmusic {
@@ -957,9 +1065,11 @@ ul {
 .midmusicleft {
   justify-self: center;
   align-items: center;
+  background-color: white;
 }
 
-.midmusicleft h2 {
+.midmusicleft h1 {
+  display: flex;
   justify-content: center;
   text-align: center;
   font-family: Archivo Black;
@@ -968,38 +1078,38 @@ ul {
 .midmusicright {
   justify-self: center;
   align-items: center;
+  background-color: white;
+  border: 50px solid white;
 }
 
 .midmusicright > p {
   color: #EE96A2;
 }
 
+.vimeo {
+  background-color: rgb(250, 248, 248);
+  width: 100%;
+  border: 20px solid black;
+}
+
 .vimeoheader {
-  display: block;
+  display: flex;
   justify-content: center;
   text-align: center;
   font-family: Archivo Black;
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 .vimeocontainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  justify-content: center;
+  flex-direction: row;
   width: 100%;
-  height: auto;
-}
-
-.vimeocontainer > iframe {
-  padding: 10px;
-  width: 100%;
-  height: 300px;
-}
-
-#bottomvid {
-  grid-column: span 2;
-  padding: 20px;
+  gap: 25px;
+  padding: 25px;
 }
 
 .listcontainer {
@@ -1060,7 +1170,7 @@ li {
 }
 
 .aboutme {
-  margin-top: 50px;
+  margin-top: 100px;
   display: block;
   height: auto;
   width: 100%;

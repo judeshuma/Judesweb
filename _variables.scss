@@ -60,6 +60,7 @@ img {
     justify-content: center;
     text-align: center;
     letter-spacing: 20px;
+
 }
 .recentPosts {
     display: flex;
@@ -67,11 +68,19 @@ img {
     flex-wrap: wrap;
     height: auto;
     width: 100%;
-    gap: 20px;
-    
+    gap: 50px;
+
 }
+.recentPostsInner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin: 10px;
+    gap: 20px;
 
-
+}
 /* Home page CSS starts here ------------------------------------ */
 // @media (max-width: 3000px) {
 //     body.home {
@@ -155,6 +164,7 @@ img {
         padding-right: 500px;
         
     }
+
     .musicbody {
         padding-left: 150px; 
         padding-right: 150px;
@@ -632,6 +642,7 @@ img {
     #blogheader2 {
         font-size: 22.5px;
     }
+    
     .musicbody {
         padding-left: 50px; 
         padding-right: 50px;
@@ -728,7 +739,6 @@ body {
     margin-top: 10px;
     opacity: .5;
 }
-
 .blogintrocontainer {
     display: flex;
     flex-wrap: wrap;
@@ -835,7 +845,7 @@ display: flex;
     border-radius: 0px;
 }
 .card img {
-    height: auto;
+    height: 100pt;
     width: 100%;
 }
 .post-tag {
