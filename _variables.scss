@@ -7,6 +7,9 @@ $primary: black;
 $dark: black;
 
 /* Global Settings  ------------------------------------ ------------------------------------   */
+a:hover {
+    opacity: .8;
+}
 
 img {
     height: 35px;
@@ -30,16 +33,7 @@ img {
     color:#ff8282;
     background-color: #000000;
 }
-.containerheader {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: Archivo Black;
-    height: auto;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    border-top: .2px solid black;
-}
+
 #judesWeb {
     display:flex;  
     color: white;
@@ -81,6 +75,7 @@ img {
     gap: 20px;
 
 }
+
 /* Home page CSS starts here ------------------------------------ */
 // @media (max-width: 3000px) {
 //     body.home {
@@ -139,14 +134,8 @@ img {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .containerheader > p {
-        font-size: 300px;
-    }
     #aboutme {
         font-size: 225px;
-    }
-    #design {
-        font-size: 300px;
     }
     .blogposts {
         margin-left: 100px;
@@ -161,10 +150,8 @@ img {
     }
     #blogheader {
         padding-left: 500px;
-        padding-right: 500px;
-        
+        padding-right: 500px; 
     }
-
     .musicbody {
         padding-left: 150px; 
         padding-right: 150px;
@@ -187,21 +174,26 @@ img {
         font-size: 500px;
         margin-top: -210px;
     }
-
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+    .newHeaderBlog {
+        font-size: 25px;
+    }
 }    
 @media (max-width: 2750px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .containerheader > p {
-        font-size: 300px;
-    }
     #aboutme {
         font-size: 225px;
-    }
-    #design {
-        font-size: 300px;
     }
     .blogposts {
         margin-left: 100px;
@@ -217,7 +209,6 @@ img {
     #blogheader {
         padding-left: 500px;
         padding-right: 500px;
-        
     }
     .musicbody {
         padding-left: 150px; 
@@ -241,6 +232,18 @@ img {
         font-size: 450px;
         margin-top: -190px;
     }
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+    .newHeaderBlog {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 2450px) {
@@ -248,14 +251,8 @@ img {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .containerheader > p {
-        font-size: 300px;
-    }
     #aboutme {
         font-size: 250px;
-    }
-    #design {
-        font-size: 300px;
     }
     .blogposts {
         margin-left: 100px;
@@ -271,7 +268,6 @@ img {
     #blogheader {
         padding-left: 450px;
         padding-right: 450px;
-        
     }
     .musicbody {
         padding-left: 150px; 
@@ -296,20 +292,26 @@ img {
         font-size: 390px;
         margin-top: -170px;
     }
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+    .newHeaderBlog {
+        font-size: 25px;
+    }
 }
 @media (max-width: 2050px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .containerheader > p {
-        font-size: 300px;
-    }
     #aboutme {
         font-size: 250px;
-    }
-    #design {
-        font-size: 300px;
     }
     .blogposts {
         margin-left: 100px;
@@ -350,20 +352,26 @@ img {
         font-size: 300px;
         margin-top: -120px;
     }  
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+    .newHeaderBlog {
+        font-size: 25px;
+    }
 }
 @media (max-width: 1750px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .containerheader > p {
-        font-size: 300px;
-    }
     #aboutme {
         font-size: 225px;
-    }
-    #design {
-        font-size: 300px;
     }
     .blogposts {
         margin-left: 100px;
@@ -403,22 +411,25 @@ img {
         font-size: 250px;
         margin-top: -100px;
     }  
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+    .newHeaderBlog {
+        font-size: 25px;
+    }
 }
 @media (max-width: 1375px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .containerheader > p {
-        font-size: 300px;
-    }
     #aboutme {
-        font-size: 200px;
-    }
-    #design {
-        font-size: 200px;
-    }
-    #music {
         font-size: 200px;
     }
     .blogposts {
@@ -460,6 +471,18 @@ img {
         font-size: 200px;
         margin-top: -90px;
     }  
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+    .newHeaderBlog {
+        font-size: 25px;
+    }
 }
 @media (max-width: 1150px) {
     #aboutme {
@@ -469,23 +492,26 @@ img {
         font-size: 180px;
         margin-top: -80px;
     }  
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+    .newHeaderBlog {
+        font-size: 25px;
+    }
 }
 @media (max-width: 990px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .containerheader > p {
-        font-size: 240px;
-    }
     #aboutme {
         font-size: 120px;
-    }
-    #design {
-        font-size: 150px;
-    }
-    #music {
-        font-size: 170px;
     }
     #blogheader {
         font-size: 50px;
@@ -525,24 +551,27 @@ img {
     #judesWeb {
         font-size: 150px;
         margin-top: -60px;
+    }
+    .newestPost1 img {
+        display: block;
     }  
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+    .newHeaderBlog {
+        font-size: 25px;
+    }
 }    
 @media (max-width: 770px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .containerheader > p {
-        font-size: 190px;       
-    }
     #aboutme {
         font-size: 100px;
-    }
-    #design {
-        font-size: 100px;
-    }
-    #music {
-        font-size: 120px;
     }
     .blogposts {
         margin-left: 30px;
@@ -583,11 +612,20 @@ img {
         font-size: 120px;
         margin-top: -50px;
     }  
+    .newestPost1 img {
+        display: none;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+    .newHeaderBlog {
+        font-size: 25px;
+    }
 }    
 @media (max-width: 630px) {
-     .containerheader > p {
-        font-size: 150px;
-    }
     #aboutme {
         font-size: 80px;
     }
@@ -600,28 +638,34 @@ img {
         font-size: 95px;
         margin-top: -40px;
     }  
+    .newestPost1 img {
+        display: none;
+    }
+    .newestPost1 img {
+        display: none;
+    }
+    .newHeader {
+        font-size: 30px;
+    }
+    .newHeader2 {
+        font-size: 19px;
+    }
+    .newHeaderBlog {
+        font-size: 19px;
+    }
+  
 }
-
 @media (max-width: 520px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
         width: 100%;
     }
-    .containerheader > p {
-        font-size: 110px;
-    }
     #aboutme {
         font-size: 50px;
-    }
-    #design {
-        font-size: 80px;
     }
     .designimg {
         width: 150px;
         height: 150px;
-    }
-    #music {
-        font-size: 85px;
     }
     .blogposts {
         margin-left: 10px;
@@ -642,7 +686,6 @@ img {
     #blogheader2 {
         font-size: 22.5px;
     }
-    
     .musicbody {
         padding-left: 50px; 
         padding-right: 50px;
@@ -670,6 +713,18 @@ img {
         font-size: 65px;
         margin-top: -28px;
     }  
+    .newestPost1 img {
+        display: none;
+    }
+    .newHeader {
+        font-size: 27px;
+    }
+    .newHeader2 {
+        font-size: 17px;
+    }
+    .newHeaderBlog {
+        font-size: 17px;
+    }
 }
 /* ------------------ Homepage CSS starts here -------------- */
 .home {
@@ -719,6 +774,200 @@ body {
 
 /* blog page css starts here ------------------------------------ ------------------------------------  */
 
+.newHeaderBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    border-top: .5px solid black;
+    border-bottom: .5px solid black;
+} 
+
+.newHeader {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: left;
+    margin-left: 40px;
+    text-align: center;
+    font-family: Archivo Black;
+    letter-spacing: 5px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.newHeader2 {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: left;
+    margin-left: 20px;
+    text-align: center;
+    font-family: Archivo Black;
+    color: #fe7c7c;
+    letter-spacing: 1px;
+    // border: 1px solid black;
+    opacity: .9;
+    // text-decoration: underline #ff8282;
+}
+.newHeaderBlog {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: left;
+    margin-left: 20px;
+    text-align: center;
+    font-family: Archivo Black;
+    color: #fe7c7c;
+    letter-spacing: 1px;
+    // border: 1px solid black;
+    opacity: .9;
+   text-decoration: none;
+}
+
+.blogHalves {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blogHalves1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.mostRecentText {
+    display: flex; 
+    justify-content: left; 
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline .5px #EE96A2;
+    color:#000000;
+    font-family: Montserrat;
+    font-size: 10pt;
+    letter-spacing: 2px;
+}
+.topPost {
+    display: block;
+    flex-basis: 700px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 325px;
+}
+.topPost img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 5px 0;
+}
+.topText {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20pt;
+}
+.topDate {
+    width: 100%;
+    display: flex;
+    color: #EE96A2;
+    font-size: 10pt;
+}
+.quickPicks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    // outline: 5px solid black;
+    gap: 15px;
+    padding: 20px;
+    // border: 2px solid black; 
+    text-align: left; 
+}
+.quickPicks h4 {
+    letter-spacing: 10px;
+    font-family: Archivo Black;
+    text-align: center;
+}
+.quickPicks a {
+   font-family: Montserrat;
+   text-decoration: none;
+   color: #ff8282;
+   
+}
+.blogHalves2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 30px;
+    flex: 2;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.newestPost1 {
+    justify-content: center;
+}
+.newestPost1 img {
+    height: auto;
+    width: 100%;
+    max-width: 280px;
+
+}
+.newestText1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    align-items: center;
+}
+.newestText2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    align-items: center;
+    text-align: justify;
+    font-size: 10pt;
+    margin-top: -10px;
+}
+.backgroundBox {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    outline: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    align-items: center; 
+    color: white;
+    background-color: #000000;
+    font-family: Montserrat;
+    font-size: 40px;
+    z-index: 1;
+    margin: 20px;
+}
+#chordoButton {
+    border: none;
+    color:white;
+    background-color: #EE96A2;
+    font-family: Montserrat;
+    z-index: 999;
+    border-radius: 10px;
+    margin: 20px;
+}
 #blogborder {
     display: flex;
     width: 55%;
@@ -739,46 +988,28 @@ body {
     margin-top: 10px;
     opacity: .5;
 }
-.blogintrocontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding:4%;
-}
-.blogintro {
-    flex-direction: row;
-    flex-basis: 450px;
-}
-.blogintro > p {
-    color: #fe7c7c;
-    width: 100%;
-    text-align: justify;
-    padding: 20px;
-}
-.blogintro2 {
-    flex-direction: row;
-    flex-basis: 450px;
-}
-.blogintro2 > img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 20px;
-} 
+
+
+//BLOG CARDS and FILTERS HERE -----------------------------------------------------------------------------------------
+
 .qoute {
     display: flex;
     width: 100%;
+    
 }
 .quote > h1 {
     display: flex;
     font-family: Montserrat;
     justify-content: center;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 50px;
+}
+.quote > h2 {
+    display: flex;
+    font-family: Montserrat;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
 }
 .quote2 {
     display: inline-flex;
@@ -845,7 +1076,7 @@ display: flex;
     border-radius: 0px;
 }
 .card img {
-    height: 100pt;
+    height: 100%;
     width: 100%;
 }
 .post-tag {
@@ -900,6 +1131,7 @@ display: flex;
 }
 .blogposttext a {
     color: #000000;
+    text-decoration: underline #fe7c7c;
 }
 .blogposttext li {
     list-style: none;
@@ -1116,6 +1348,16 @@ li {
     list-style: none;
 }
 /* ABOUT ME CSS STARTS HERE ------------------------------------ */
+#aboutme {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Archivo Black;
+    height: auto;
+    width: 100%;
+    color: rgb(0, 0, 0);
+
+}
 .banner {
     position: relative;
     width: 100%;
@@ -1159,6 +1401,37 @@ li {
     border-bottom: 1px solid black;
     padding: 10px;
 }
+.blogintrocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding:4%;
+}
+.blogintro {
+    flex-direction: row;
+    flex-basis: 450px;
+}
+.blogintro > p {
+    color: #fe7c7c;
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
+}
+.blogintro2 {
+    flex-direction: row;
+    flex-basis: 450px;
+}
+.blogintro2 > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+} 
+
 /* COMMENT CSS STARTS HERE -----------------------------------------*/
 .commentsbox {
     display: block;
