@@ -85,7 +85,7 @@
       <div class="newestPost1">
         <a class="links" href="empathy.html"><img src="./images/empathy.jpeg" alt=""> 
           <p class="newestText1"><b>Empathy, Influence and The Meaning Of It All <span class="newestDate" style="color: #fe7c7c;">&nbsp;04.02.24</span></b></p>
-        <p class="newestText2" >You Should Be More Empathetic. You Can Thank Me Later. Learning to genuinely empathize with others can gain you influence and get you where you want to be.</p></a> 
+        <p class="newestText2" >You Should Be More Empathetic. Learning to genuinely empathize with others can gain you influence and get you where you want to be.</p></a> 
         </div>
       <div class="newestPost1">
         <a class="links" href="rightQuestion.html"><img src="./images/einstein.jpeg" alt=""> 
@@ -123,17 +123,19 @@
 <hr>
 <div class="quote">
   <h1>The Art of Consistent Growth</h1>
-  <h2>Previous Posts</h2>
-</div>  
-<div class="quote2" id="myButtonContainer">
-  <button class="btn" onclick="filterSelection('all')">Show All</button>
-  <button class="btn" onclick="filterSelection('tech')">Tech</button>
-  <button class="btn" onclick="filterSelection('art')">Art</button>
-  <button class="btn" onclick="filterSelection('self')">Self</button>
+  <!-- <h2>Previous Posts</h2> -->
+</div>
+<div class="showAllButtonBox">
+  <button onclick="togglePosts()" id="showAllButton" >Show All Previous Posts</button>
 </div>  
 <hr>
-
-<div class="blogposts">
+<div id="allBlogPosts" class="blogposts">
+  <div class="quote2" id="myButtonContainer">
+    <button class="btn" onclick="filterSelection('all')">Show All</button>
+    <button class="btn" onclick="filterSelection('tech')">Tech</button>
+    <button class="btn" onclick="filterSelection('art')">Art</button>
+    <button class="btn" onclick="filterSelection('self')">Self</button>
+  </div>  
   <div class="postBlog tech">
     <div class="card" style="width: 15rem;">
       <a href="AItakeover.html"><img src="./images/Aitakeover2.jpeg" class="card-img-top" alt=""></a>
@@ -159,7 +161,7 @@
       <a href="empathy.html"><img src="./images/empathy.jpeg" class="card-img-top" alt=""></a>
       <div class="card-body">
         <h5 class="card-title">Empathy, Influence and The Meaning Of It All</h5>
-        <p class="card-text"><p class="dated"><b>04.02.24</b></p>You Should Be More Empathetic. You Can Thank Me Later. Learning to genuinely empathize with others can gain you influence and get you where you want to be.</p>
+        <p class="card-text"><p class="dated"><b>04.02.24</b></p>You Should Be More Empathetic. Learning to genuinely empathize with others can gain you influence and get you where you want to be.</p>
         <p class="post-tag">Tech</p>
         <p class="post-tag">Self</p>
       </div>
@@ -282,14 +284,14 @@
 </div>
 
 <script>
+//-----------CHORDO BUTTON------------------------------------------
 document.getElementById("chordoButton").addEventListener("click", goToChordo)
 
 function goToChordo () {
     window.open(
         "https://www.chordo.app", "_blank");
 };
-
-
+//------------filter buttons blog posts ---------------------------------------------
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -334,6 +336,23 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+
+// ----------SHOW ALL POSTS BUTTON--------------------------
+function togglePosts() {
+  
+  var allBlogPost = document.getElementById('allBlogPosts');
+  var displaySetting = allBlogPost.style.display;
+  var myShowAllButton = document.getElementById('showAllButton');
+  
+  if (displaySetting == 'flex') {
+    allBlogPost.style.display = 'none';
+    myShowAllButton.innerHTML = 'Show All Previous Posts'
+  }
+  else {
+    allBlogPosts.style.display = 'flex';
+    myShowAllButton.innerHTML = 'Hide All Previous Posts'
+  }
 }
 </script>
 

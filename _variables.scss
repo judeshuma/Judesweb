@@ -1255,11 +1255,21 @@ body {
 
 
 //BLOG CARDS and FILTERS HERE -----------------------------------------------------------------------------------------
-
+.showAllButtonBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+#showAllButton {
+    display: flex;
+    border: none;
+    font-family: Montserrat;
+}
 .qoute {
     display: flex;
     width: 100%;
-    
+  
 }
 .quote > h1 {
     display: flex;
@@ -1300,8 +1310,10 @@ body {
 .quote2 button:hover {
     color: black;
 }
+#allBlogPosts {
+    display: none;
+}
 .blogposts {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
