@@ -11,7 +11,9 @@ a:hover {
     opacity: .8;
     font-weight: normal;
 }
-
+a:hover:not(.newestText1) {
+    opacity: 1;
+}
 img {
     height: 35px;
     width: 35px;
@@ -448,10 +450,10 @@ img {
         padding: 45px;
     }
     .newestText1 {
-        width: 300px;
+        width: 100%;
     }
     .newestText2 {
-        width: 280px;
+        width: 100%;
     }    
     .newestPost1 {
         max-width: 280px;
@@ -524,14 +526,14 @@ img {
         padding: 30px;
     }
     .blogHalves2 {
-        gap: 30px;
+        gap: 10px;
         padding: 45px;
     }
     .newestText1 {
-        width: 300px;
+        width: 100%;
     }
     .newestText2 {
-        width: 280px;
+        width: 100%;
     }
     .newestPost1 {
         max-width: 280px;
@@ -988,8 +990,10 @@ img {
     .newestPost1 img {
         display: flex;
         width: 50%;
-        height: 100%;
-        // border: 4px solid black;
+        align-items: center;
+        // min-height: 100%;
+        padding: 10px;
+        // border: 20px solid black;
     }
     .newestDate {
         font-size: 8pt;
@@ -1179,16 +1183,24 @@ body {
    color: #ff8282;
    
 }
+.newestText1:hover {
+    background-color: #000000;
+    color: white;
+    
+    
+}
 .blogHalves2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center; 
     flex: 2;
+    margin-top: 45px;
 }
 .newestPost1 {
     display: flex;
     justify-content: center;
+    
 }
 .newestPost1 img {
     height: auto;
@@ -1212,7 +1224,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     outline: 2px solid black;
-    padding: 10px;
+    padding: 50px;
     text-align: center;
     border: 2px solid black;
     align-items: center; 
@@ -1255,21 +1267,40 @@ body {
 
 
 //BLOG CARDS and FILTERS HERE -----------------------------------------------------------------------------------------
+.blackBack {
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    margin-bottom: 35px;
+    margin-top: -15px;
+}
 .showAllButtonBox {
     display: flex;
     justify-content: center;
+    text-align: center;
     width: 100%;
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 #showAllButton {
-    display: flex;
+    padding: 10px;
     border: none;
+    margin-top: 20px;
     font-family: Montserrat;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 .qoute {
     display: flex;
     width: 100%;
-  
+    
 }
 .quote > h1 {
     display: flex;
@@ -1277,13 +1308,8 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 50px;
-}
-.quote > h2 {
-    display: flex;
-    font-family: Montserrat;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
+    color: white;
+    padding: 20px;
 }
 .quote2 {
     display: inline-flex;
@@ -1429,7 +1455,7 @@ display: flex;
 }
 .blogimg2 {
     display: flex;
-    width: 340px;
+    width: 50%;
     height: auto;
     padding: 30px;
     justify-content: center;
