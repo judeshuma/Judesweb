@@ -4,6 +4,11 @@
 /* Global Settings  ------------------------------------ ------------------------------------   */
 a:hover {
   opacity: 0.8;
+  font-weight: normal;
+}
+
+a:hover:not(.newestText1) {
+  opacity: 1;
 }
 
 img {
@@ -33,30 +38,6 @@ img {
   background-color: #000000;
 }
 
-#judesWeb {
-  display: flex;
-  color: white;
-  width: 100%;
-  overflow: hidden;
-  margin-top: -150px;
-  font-family: Archivo Black;
-}
-
-#blurb {
-  display: flex;
-  color: white;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 4%;
-  font-family: Archivo Black;
-  font-size: 15pt;
-  -webkit-text-decoration: underline #fe7c7c;
-          text-decoration: underline #fe7c7c;
-  justify-content: center;
-  text-align: center;
-  letter-spacing: 20px;
-}
-
 .recentPosts {
   display: flex;
   justify-content: center;
@@ -76,6 +57,47 @@ img {
   gap: 20px;
 }
 
+#judesWeb {
+  display: flex;
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -150px;
+  font-family: Archivo Black;
+}
+
+#enterDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#enterButton {
+  display: flex;
+  margin-top: 100px;
+  width: 125px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+
+#enterButton:hover {
+  color: #fe7c7c;
+}
+
+#siteTagBox {
+  font-size: 8pt;
+  margin-top: 50px;
+}
+
+#sitetag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Home page CSS starts here ------------------------------------ */
 /* ------------------ ALL OTHER PAGES QUERIES -------------- */
 @media (max-width: 3000px) {
@@ -91,8 +113,8 @@ img {
     margin-right: 100px;
   }
   .blogposttext {
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .blogposttext > p {
     font-size: 13pt;
@@ -123,14 +145,55 @@ img {
     font-size: 500px;
     margin-top: -210px;
   }
+  .blogHalves {
+    padding: 100px;
+  }
+  .blogHalves2 {
+    gap: 30px;
+    padding: 45px;
+  }
+  .newestText1 {
+    width: 300px;
+  }
+  .newestText2 {
+    width: 280px;
+  }
+  .newestPost1 {
+    max-width: 280px;
+  }
   .newestPost1 img {
     display: block;
+    width: 100%;
+  }
+  .newestDate {
+    font-size: 10pt;
   }
   .newHeader {
     font-size: 40px;
   }
   .newHeader2 {
     font-size: 25px;
+  }
+  .newHeaderBlog {
+    font-size: 25px;
+  }
+  .blogPostContainer {
+    margin-left: 280px;
+    margin-right: 280px;
+  }
+  .blogPostHeader {
+    font-size: 65px;
+    text-align: center;
+  }
+  .blogPostSubHeader {
+    font-size: 16pt;
+    max-width: 850px;
+  }
+  .blogDate {
+    font-size: 12pt;
+  }
+  .blogFoto {
+    width: 55%;
   }
 }
 @media (max-width: 2750px) {
@@ -146,8 +209,8 @@ img {
     margin-right: 100px;
   }
   .blogposttext {
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .blogposttext > p {
     font-size: 13pt;
@@ -178,13 +241,36 @@ img {
     font-size: 450px;
     margin-top: -190px;
   }
+  .blogHalves {
+    padding: 100px;
+  }
+  .blogHalves2 {
+    gap: 30px;
+    padding: 45px;
+  }
+  .newestText1 {
+    width: 300px;
+  }
+  .newestText2 {
+    width: 280px;
+  }
+  .newestPost1 {
+    max-width: 280px;
+  }
   .newestPost1 img {
     display: block;
+    width: 100%;
+  }
+  .newestDate {
+    font-size: 10pt;
   }
   .newHeader {
     font-size: 40px;
   }
   .newHeader2 {
+    font-size: 25px;
+  }
+  .newHeaderBlog {
     font-size: 25px;
   }
 }
@@ -201,8 +287,8 @@ img {
     margin-right: 100px;
   }
   .blogposttext {
-    padding-left: 550px;
-    padding-right: 550px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .blogposttext > p {
     font-size: 13pt;
@@ -234,13 +320,36 @@ img {
     font-size: 390px;
     margin-top: -170px;
   }
+  .blogHalves {
+    padding: 100px;
+  }
+  .blogHalves2 {
+    gap: 30px;
+    padding: 45px;
+  }
+  .newestText1 {
+    width: 300px;
+  }
+  .newestText2 {
+    width: 280px;
+  }
   .newestPost1 img {
     display: block;
+    width: 100%;
+  }
+  .newestPost1 {
+    max-width: 280px;
+  }
+  .newestDate {
+    font-size: 10pt;
   }
   .newHeader {
     font-size: 40px;
   }
   .newHeader2 {
+    font-size: 25px;
+  }
+  .newHeaderBlog {
     font-size: 25px;
   }
 }
@@ -257,8 +366,8 @@ img {
     margin-right: 100px;
   }
   .blogposttext {
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .blogposttext > p {
     font-size: 13pt;
@@ -290,14 +399,55 @@ img {
     font-size: 300px;
     margin-top: -120px;
   }
+  .blogHalves {
+    padding: 75px;
+  }
+  .blogHalves2 {
+    gap: 30px;
+    padding: 45px;
+  }
+  .newestText1 {
+    width: 100%;
+  }
+  .newestText2 {
+    width: 100%;
+  }
+  .newestPost1 {
+    max-width: 280px;
+  }
   .newestPost1 img {
     display: block;
+    width: 100%;
+  }
+  .newestDate {
+    font-size: 10pt;
   }
   .newHeader {
     font-size: 40px;
   }
   .newHeader2 {
     font-size: 25px;
+  }
+  .newHeaderBlog {
+    font-size: 25px;
+  }
+  .blogPostContainer {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .blogPostHeader {
+    font-size: 65px;
+    text-align: center;
+  }
+  .blogPostSubHeader {
+    font-size: 16pt;
+    max-width: 850px;
+  }
+  .blogDate {
+    font-size: 12pt;
+  }
+  .blogFoto {
+    width: 55%;
   }
 }
 @media (max-width: 1750px) {
@@ -313,8 +463,8 @@ img {
     margin-right: 100px;
   }
   .blogposttext {
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 160px;
+    padding-right: 160px;
   }
   .blogposttext > p {
     font-size: 13pt;
@@ -346,14 +496,58 @@ img {
     font-size: 250px;
     margin-top: -100px;
   }
+  .blogHalves {
+    padding: 30px;
+  }
+  .blogHalves:not(.blogHalves2) {
+    padding: 30px;
+  }
+  .blogHalves2 {
+    gap: 10px;
+    padding: 45px;
+  }
+  .newestText1 {
+    width: 100%;
+  }
+  .newestText2 {
+    width: 100%;
+  }
+  .newestPost1 {
+    max-width: 280px;
+  }
   .newestPost1 img {
     display: block;
+    width: 100%;
+  }
+  .newestDate {
+    font-size: 10pt;
   }
   .newHeader {
     font-size: 40px;
   }
   .newHeader2 {
     font-size: 25px;
+  }
+  .newHeaderBlog {
+    font-size: 25px;
+  }
+  .blogPostContainer {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  .blogPostHeader {
+    font-size: 60px;
+    text-align: center;
+  }
+  .blogPostSubHeader {
+    font-size: 16pt;
+    max-width: 850px;
+  }
+  .blogDate {
+    font-size: 12pt;
+  }
+  .blogFoto {
+    width: 55%;
   }
 }
 @media (max-width: 1375px) {
@@ -369,8 +563,8 @@ img {
     margin-right: 100px;
   }
   .blogposttext {
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
   .blogposttext > p {
     font-size: 13pt;
@@ -403,14 +597,54 @@ img {
     font-size: 200px;
     margin-top: -90px;
   }
+  .blogHalves {
+    padding: 20px;
+  }
+  .blogHalves2 {
+    gap: 20px;
+    padding: 45px;
+  }
+  .newestText1 {
+    width: 300px;
+  }
+  .newestText2 {
+    width: 280px;
+  }
+  .newestPost1 {
+    max-width: 280px;
+  }
   .newestPost1 img {
     display: block;
+    width: 100%;
+  }
+  .newestDate {
+    font-size: 10pt;
   }
   .newHeader {
     font-size: 40px;
   }
   .newHeader2 {
     font-size: 25px;
+  }
+  .newHeaderBlog {
+    font-size: 25px;
+  }
+  .blogPostContainer {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+  .blogPostHeader {
+    font-size: 55px;
+  }
+  .blogPostSubHeader {
+    font-size: 14pt;
+    max-width: 750px;
+  }
+  .blogDate {
+    font-size: 12pt;
+  }
+  .blogFoto {
+    width: 60%;
   }
 }
 @media (max-width: 1150px) {
@@ -421,14 +655,59 @@ img {
     font-size: 180px;
     margin-top: -80px;
   }
+  .blogposttext {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .blogHalves {
+    padding: 20px;
+  }
+  .blogHalves2 {
+    gap: 30px;
+    padding: 45px;
+  }
+  .newestText1 {
+    width: 300px;
+  }
+  .newestText2 {
+    width: 280px;
+  }
+  .newestPost1 {
+    max-width: 280px;
+  }
   .newestPost1 img {
     display: block;
+    width: 100%;
+  }
+  .newestDate {
+    font-size: 10pt;
   }
   .newHeader {
     font-size: 40px;
   }
   .newHeader2 {
     font-size: 25px;
+  }
+  .newHeaderBlog {
+    font-size: 25px;
+  }
+  .blogPostContainer {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  .blogPostHeader {
+    font-size: 47px;
+    text-align: center;
+  }
+  .blogPostSubHeader {
+    font-size: 14pt;
+    max-width: 700px;
+  }
+  .blogDate {
+    font-size: 12pt;
+  }
+  .blogFoto {
+    width: 60%;
   }
 }
 @media (max-width: 990px) {
@@ -452,8 +731,8 @@ img {
     margin-right: 50px;
   }
   .blogposttext {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 125px;
+    padding-right: 125px;
   }
   .blogposttext > p {
     font-size: 13pt;
@@ -478,14 +757,54 @@ img {
     font-size: 150px;
     margin-top: -60px;
   }
+  .blogHalves {
+    padding: 20px;
+  }
+  .blogHalves2 {
+    gap: 30px;
+    padding: 45px;
+  }
+  .newestText1 {
+    width: 300px;
+  }
+  .newestText2 {
+    width: 280px;
+  }
+  .newestPost1 {
+    max-width: 280px;
+  }
   .newestPost1 img {
     display: block;
+    width: 100%;
+  }
+  .newestDate {
+    font-size: 10pt;
   }
   .newHeader {
     font-size: 40px;
   }
   .newHeader2 {
     font-size: 25px;
+  }
+  .newHeaderBlog {
+    font-size: 25px;
+  }
+  .blogPostContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .blogPostHeader {
+    font-size: 35px;
+    text-align: left;
+  }
+  .blogPostSubHeader {
+    font-size: 14pt;
+  }
+  .blogDate {
+    font-size: 12pt;
+  }
+  .blogFoto {
+    width: 60%;
   }
 }
 @media (max-width: 770px) {
@@ -535,14 +854,53 @@ img {
     font-size: 120px;
     margin-top: -50px;
   }
+  .blogHalves {
+    padding: 20px;
+  }
+  .blogHalves2 {
+    gap: 30px;
+    padding: 30px;
+  }
+  .newestText1 {
+    width: 300px;
+  }
+  .newestText2 {
+    width: 280px;
+  }
+  .newestPost1 {
+    max-width: 280px;
+  }
   .newestPost1 img {
-    display: none;
+    display: flex;
+    width: 100%;
+  }
+  .newestDate {
+    font-size: 10pt;
   }
   .newHeader {
     font-size: 40px;
   }
   .newHeader2 {
     font-size: 25px;
+  }
+  .newHeaderBlog {
+    font-size: 25px;
+  }
+  .blogPostContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .blogPostHeader {
+    font-size: 35px;
+  }
+  .blogPostSubHeader {
+    font-size: 14pt;
+  }
+  .blogDate {
+    font-size: 12pt;
+  }
+  .blogFoto {
+    width: 65%;
   }
 }
 @media (max-width: 630px) {
@@ -558,17 +916,60 @@ img {
     font-size: 95px;
     margin-top: -40px;
   }
-  .newestPost1 img {
-    display: none;
+  .mostRecentText {
+    margin-left: 10px;
+  }
+  .blogHalves {
+    padding: 50px;
+  }
+  .blogHalves2 {
+    gap: 15px;
+    padding: 20px;
+  }
+  .newestPost1 {
+    min-width: 100%;
+  }
+  .newestText1 {
+    float: left;
+    width: 50%;
+  }
+  .newestText2 {
+    width: 50%;
+    float: left;
+    padding: 20px;
   }
   .newestPost1 img {
-    display: none;
+    display: flex;
+    float: right;
+    height: auto;
+  }
+  .newestDate {
+    font-size: 8pt;
   }
   .newHeader {
     font-size: 30px;
   }
   .newHeader2 {
     font-size: 19px;
+  }
+  .newHeaderBlog {
+    font-size: 19px;
+  }
+  .blogPostContainer {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .blogPostHeader {
+    font-size: 30px;
+  }
+  .blogPostSubHeader {
+    font-size: 12pt;
+  }
+  .blogDate {
+    font-size: 10pt;
+  }
+  .blogFoto {
+    width: 70%;
   }
 }
 @media (max-width: 520px) {
@@ -629,14 +1030,73 @@ img {
     font-size: 65px;
     margin-top: -28px;
   }
+  .mostRecentText {
+    padding: 0px;
+  }
+  .topText {
+    padding: 10px;
+  }
+  .blogHalves {
+    padding: 0px;
+  }
+  .blogHalves2 {
+    gap: 0px;
+    padding: 0px;
+    display: block;
+  }
+  .newestPost1 {
+    border-top: 0.5px solid white;
+    border-bottom: 0.5px solid white;
+    text-align: left;
+    width: 100%;
+    background-color: #000000;
+  }
+  .newestText1 {
+    padding: 7px;
+    height: auto;
+    padding-top: 2px;
+    float: left;
+    color: white;
+  }
+  .newestText2 {
+    float: left;
+    padding: 7px;
+    height: 20%;
+    color: white;
+  }
   .newestPost1 img {
-    display: none;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding: 10px;
+  }
+  .newestDate {
+    font-size: 8pt;
   }
   .newHeader {
     font-size: 27px;
   }
   .newHeader2 {
     font-size: 17px;
+  }
+  .newHeaderBlog {
+    font-size: 17px;
+  }
+  .blogPostContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .blogPostHeader {
+    font-size: 30px;
+  }
+  .blogPostSubHeader {
+    font-size: 10pt;
+  }
+  .blogDate {
+    font-size: 8pt;
+  }
+  .blogFoto {
+    width: 70%;
   }
 }
 /* ------------------ Homepage CSS starts here -------------- */
@@ -729,28 +1189,41 @@ body {
   opacity: 0.9;
 }
 
-.blogHalves {
+.newHeaderBlog {
+  display: flex;
+  width: auto;
   height: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: left;
+  margin-left: 20px;
+  text-align: center;
+  font-family: Archivo Black;
+  color: #fe7c7c;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.blogHalves {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .blogHalves1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  gap: 30px;
 }
 
 .mostRecentText {
   display: flex;
   justify-content: left;
   text-align: center;
-  margin-top: 10px;
-  -webkit-text-decoration: underline 0.5px #EE96A2;
-          text-decoration: underline 0.5px #EE96A2;
+  margin-top: 0px;
+  -webkit-text-decoration: underline 0.5px #fe7c7c;
+          text-decoration: underline 0.5px #fe7c7c;
   color: #000000;
   font-family: Montserrat;
   font-size: 10pt;
@@ -784,7 +1257,7 @@ body {
 .topDate {
   width: 100%;
   display: flex;
-  color: #EE96A2;
+  color: #fe7c7c;
   font-size: 10pt;
 }
 
@@ -794,53 +1267,61 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  outline: 2px solid black;
-  gap: 5px;
-  padding: 50px;
-  border: 2px solid black;
+  gap: 15px;
+  padding: 30px;
   text-align: left;
 }
 
 .quickPicks h4 {
-  letter-spacing: 10px;
+  font-family: Archivo Black;
+  text-align: center;
 }
 
 .quickPicks a {
-  font-family: Montserrat;
+  font-family: Archivo Black;
   text-decoration: none;
   color: #ff8282;
 }
 
+.newestText1:hover {
+  background-color: #000000;
+  color: white;
+}
+
 .blogHalves2 {
   display: flex;
-  height: -moz-fit-content;
-  height: fit-content;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 50px;
   flex: 2;
-  gap: 30px;
+  margin-top: 0px;
+  background-color: #000000;
 }
 
 .newestPost1 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 100%;
-  flex-basis: 1;
 }
 
 .newestPost1 img {
   height: auto;
-  width: 100%;
 }
 
 .newestText1 {
   display: flex;
   flex-wrap: wrap;
-  width: 250px;
   align-items: center;
+  color: white;
+}
+
+.newestText2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: justify;
+  font-size: 10pt;
+  margin-top: -10px;
+  color: white;
 }
 
 .backgroundBox {
@@ -849,7 +1330,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   outline: 2px solid black;
-  padding: 5px;
+  padding: 50px;
+  text-align: center;
   border: 2px solid black;
   align-items: center;
   color: white;
@@ -857,12 +1339,13 @@ body {
   font-family: Montserrat;
   font-size: 40px;
   z-index: 1;
+  margin: 20px;
 }
 
 #chordoButton {
   border: none;
   color: white;
-  background-color: #EE96A2;
+  background-color: #fe7c7c;
   font-family: Montserrat;
   z-index: 999;
   border-radius: 10px;
@@ -891,6 +1374,30 @@ body {
   opacity: 0.5;
 }
 
+.showAllButtonBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#showAllButton {
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  font-family: Montserrat;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 .qoute {
   display: flex;
   width: 100%;
@@ -902,6 +1409,8 @@ body {
   justify-content: center;
   text-align: center;
   margin-top: 50px;
+  color: black;
+  padding: 20px;
 }
 
 .quote2 {
@@ -932,8 +1441,12 @@ body {
   color: black;
 }
 
+#allBlogPosts {
+  display: none;
+  width: 100%;
+}
+
 .blogposts {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -941,6 +1454,8 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .postBlog {
@@ -960,7 +1475,7 @@ body {
   display: flex;
   width: 30%;
   font-size: 9pt;
-  color: #EE96A2;
+  color: #fe7c7c;
   margin-top: -5px;
   margin-bottom: 5px;
 }
@@ -1017,14 +1532,13 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
-  border-top: 0.2px solid black;
 }
 
 .blogcontent > p {
   font-family: Archivo Black;
   font-size: 85px;
-  margin-top: 50px;
-  padding: 35px;
+  margin-top: 0px;
+  padding: 45px;
   background-color: none;
 }
 
@@ -1032,11 +1546,13 @@ body {
   font-family: sans-serif;
   text-indent: 50px;
   font-size: 13pt;
-  text-align: justify;
+  text-align: left;
 }
 
 .blogposttext a {
-  color: #000000;
+  color: #fe7c7c;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .blogposttext li {
@@ -1045,9 +1561,14 @@ body {
   font-family: sans-serif;
 }
 
+.blogposttext h4 {
+  font-family: Archivo Black;
+}
+
 .blogdate {
-  float: right;
-  color: #EE96A2;
+  float: left;
+  color: #fe7c7c;
+  padding: 0px;
 }
 
 .blogimg {
@@ -1061,7 +1582,7 @@ body {
 
 .blogimg2 {
   display: flex;
-  width: 340px;
+  width: 60%;
   height: auto;
   padding: 30px;
   justify-content: center;
@@ -1075,6 +1596,46 @@ body {
   justify-content: center;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.blogPostContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogPostHeader {
+  display: flex;
+  background-image: url(https://pyxis.nymag.com/v1/imgs/117/ebe/e4188d66c1e3b4f7e76cc112d42310f886-05-richard-prince-lede.2x.rhorizontal.w700.jpg);
+  background-size: 100% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-family: Archivo Black;
+  padding: 45px;
+}
+
+.blogPostSubHeader {
+  color: rgb(140, 140, 140);
+  font-style: italic;
+  font-family: Archivo Black;
+  padding: 45px;
+  margin-top: -85px;
+}
+
+.blogDate {
+  justify-content: left;
+  color: #fe7c7c;
+}
+
+.blogFoto {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 30px;
 }
 
 .codesnippet {
@@ -1225,7 +1786,7 @@ ul {
 }
 
 .midmusicright > p {
-  color: #EE96A2;
+  color: #fe7c7c;
 }
 
 .vimeo {
