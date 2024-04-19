@@ -13,7 +13,7 @@ a:hover {
 }
 a:hover:not(.newestText1) {
     opacity: 1;
-}
+} 
 img {
     height: 35px;
     width: 35px;
@@ -137,12 +137,25 @@ img {
     //     margin-left: 100px;
     //     margin-right: 100px;
     // }
+
     .blogposttext {
         padding-left: 0px;
         padding-right: 0px;
     }
     .blogposttext > p {
         font-size: 13pt;
+    }
+    #myButtonContainerNew {
+        display: flex;
+        
+        gap: 50px;
+    }
+    .btn1 {
+        font-size: 22px;
+    }
+    .allBlogPosts {
+        margin-left: 150px;
+        margin-right: 150px;
     }
     #blogheader {
         padding-left: 500px;
@@ -543,7 +556,7 @@ img {
         padding: 45px;
     }
     .innerBlogHalves2 {
-        gap: 1px;
+        gap: 10px;
     }
     .newestText1 {
         width: 100%;
@@ -598,6 +611,10 @@ img {
     }
     #aboutme {
         font-size: 200px;
+    }
+    .allBlogPosts {
+        margin-left: 100px;
+        margin-right: 100px;
     }
     // .blogposts {
     //     margin-left: 300px;
@@ -697,6 +714,17 @@ img {
         font-size: 180px;
         margin-top: -80px;
     }  
+    #myButtonContainerNew {
+        display: flex;
+        gap: 30px;
+    }
+    .btn1 {
+        font-size: 18px;
+    }
+    .allBlogPosts {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
     .blogposttext {
         padding-left: 100px;
         padding-right: 100px;
@@ -768,6 +796,17 @@ img {
     }
     #blogheader2 {
         font-size: 45px;
+    }
+    #myButtonContainerNew {
+        display: flex;
+        gap: 18px;
+    }
+    .btn1 {
+        font-size: 18px;
+    }
+    .allBlogPosts {
+        margin-left: 65px;
+        margin-right: 65px;
     }
     // .blogposts {
     //     margin-left: 50px;
@@ -859,6 +898,17 @@ img {
     }
     #aboutme {
         font-size: 100px;
+    }
+    #myButtonContainerNew {
+        display: flex;
+        gap: 10px;
+    }
+    .btn1 {
+        font-size: 14px;
+    }
+    .allBlogPosts {
+        margin-left: 50px;
+        margin-right: 50px;
     }
     // .blogposts {
     //     margin-left: 30px;
@@ -964,6 +1014,23 @@ img {
         font-size: 95px;
         margin-top: -40px;
     }  
+    .quote2New {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    #myButtonContainerNew {
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+    }
+    .btn1 {
+        font-size: 12px;
+    }
+    .allBlogPosts {
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
     .mostRecentText {
         margin-left: 10px;
     }
@@ -971,7 +1038,7 @@ img {
         padding: 50px;
     }
     #hrQuickPicks {
-        display: none;
+        display: flex;
     }
     #fiveMinuteReads {
         margin-top: 15px;
@@ -1046,6 +1113,9 @@ img {
     //     margin-left: 0px;
     //     margin-right: 0px;
     // }
+    h4 {
+        text-indent: 0%;
+    }
     .blogposttext { 
         padding-left: 20px;
         padding-right: 20px;
@@ -1281,6 +1351,7 @@ body {
     opacity: .9;
    text-decoration: none;
 }
+// -------------------------------- BLOG HALVES --------------------------------------------------
 .blogHalves {
     display: flex;
     flex-wrap: wrap; 
@@ -1313,7 +1384,7 @@ body {
     min-width: 350px;
     
 }
-.topPost img {
+.topPostimg {
     width: 100%;
     height: auto;
     box-shadow: 0 0 5px 0;
@@ -1331,16 +1402,18 @@ body {
     color: #fe7c7c;
     font-size: 10pt;
 }
+// ----------------FRSH PICKS -----------------------------------------------------------------------
 .quickPicks {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     margin-top: 30px;
     width: 100%;
     gap: 15px;
     text-align: left;
     margin-bottom: 30px;
+    height: auto;
 }
 .quickPicks h4 {
     font-family: Archivo Black;
@@ -1350,7 +1423,37 @@ body {
    font-family: Archivo Black;
    text-decoration: none;
    color: #ff8282;
-   
+}
+.belowQP {
+    display: flex;
+    flex: 50%;
+    height: auto;
+    margin: 30px;
+}
+.topPost2 {
+    background-color: #000000;
+}
+.topPost2img {
+    width: 100%;
+    height: auto;
+}
+.topPost2Text {
+    font-family: Archivo Black;
+    font-size: 20pt;
+    color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+.topPost2Sub {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Montserrat;
+    justify-content: center;
+    margin-top: -20px;
+    color: white;
+    padding: 10px;
 }
 .newestText1:hover {
     background-color: #000000;
@@ -1358,10 +1461,12 @@ body {
     
     
 }
+
+// ---------------------BLOG HALF 2 ----------------------------------------------------
 #fiveMinuteReads {
     width: 100%; 
     display: flex; 
-    letter-spacing: 10px; 
+    letter-spacing: 15px; 
     justify-content: left; 
     color: white; 
     font-family: Archivo Black;
@@ -1385,6 +1490,7 @@ body {
     display: flex;
     justify-content: center;
     border: 1px solid white;
+    height: auto;
 }
 .newestPost1 img {
     height: auto;
@@ -1402,6 +1508,7 @@ body {
     font-size: 10pt;
     color: white;
     padding: 5px;
+    font-family: Montserrat;
 }
 .backgroundBox {
     display: flex;
@@ -1415,8 +1522,7 @@ body {
     background-color: #000000;
     font-family: Montserrat;
     font-size: 40px;
-    z-index: 1;
-    margin-top: 20px;    
+    z-index: 1;  
 }
 #chordoButton {
     border: none;
@@ -1447,6 +1553,73 @@ body {
     margin-right: auto;
     margin-top: 10px;
     opacity: .5;
+}
+
+//----------------------------------NEW BLOG DESIGN ----------------------------------------------
+.postBlogNew {
+    display: flex;
+    height: auto;
+    width: 160px;
+    border: 1px solid black;
+}
+.postBlogNewImg {
+    width: 100%;
+    height: auto;
+}
+.cardImg {
+    width: 100%;
+    height: auto;
+}
+.card-title {
+    font-family: Archivo Black; 
+    font-size: 12pt; 
+    width: 100%;
+    margin-top: 7px;
+}
+.cardSubText {
+    font-size: 9pt; 
+    font-family: Montserrat;
+    padding: 2px;
+}
+.datedNew {
+    color: #fe7c7c;
+    font-size: 8pt;
+    float: right;
+}
+.post-tag-new {
+    font-size: 8pt;
+    width: 35px;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: rgb(244, 244, 244);
+}
+.quoteNew {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    height: 100px;
+}
+.btn1 {
+    border: none;
+    color: white;
+    background-color: black;
+    font-family: Archivo Black;
+}
+.quote2New {
+    flex-wrap: wrap;
+   
+}
+.quote2New button:active {
+    color: yellow;
+}
+.quote2New button:hover {
+    color: yellow;
 }
 
 
@@ -1538,8 +1711,7 @@ body {
     margin-bottom: 20px;
     overflow: hidden;
     flex-direction: row;
-    margin-left: 100px;
-    margin-right: 100px;
+    
 }
 .postBlog {
     display: none; 
@@ -1621,6 +1793,11 @@ display: flex;
     font-size: 13pt;
     text-align: left;
 }
+h2 {
+    font-family: Montserrat;
+    text-align: left;
+    padding: 10px;
+}
 .blogposttext a {
     color: #fe7c7c;
     text-decoration: none;
@@ -1696,7 +1873,7 @@ display: flex;
     justify-content: center;
     display: flex;
     margin-top: -30px;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
 }
 .codesnippet {
     display: flex;
@@ -1888,7 +2065,6 @@ li {
     height: auto;
     width: 100%;
     color: rgb(0, 0, 0);
-
 }
 .banner {
     position: relative;
@@ -1917,21 +2093,33 @@ li {
     color: white;
 }
 .aboutme {
-    margin-top: 100px;
-    display: block;
+    margin-top: 0px;
+    display: flex;
     height: auto;
     width: 100%;
     text-align: justify;
 }
+#aboutMeFoto {
+    display: flex;
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color: #000000;
+}
 .aboutmebody {
     justify-content: center;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #000000;
+    color: white;
 }
 .aboutmebody p {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px;
 }
 .blogintrocontainer {
     display: flex;
@@ -1940,6 +2128,8 @@ li {
     align-items: center;
     width: 100%;
     padding:4%;
+    margin-top: -70px;
+    background-color: #000000;
 }
 .blogintro {
     flex-direction: row;
@@ -1950,6 +2140,7 @@ li {
     width: 100%;
     text-align: justify;
     padding: 20px;
+    margin-top: 20px;
 }
 .blogintro2 {
     flex-direction: row;
@@ -1961,7 +2152,7 @@ li {
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 0px;
 } 
 
 /* COMMENT CSS STARTS HERE -----------------------------------------*/
