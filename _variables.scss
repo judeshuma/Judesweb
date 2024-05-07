@@ -72,6 +72,7 @@ img {
     align-items: center;
 
 }
+
 /* Home page CSS starts here ------------------------------------ */
 // @media (max-width: 3000px) {
 //     body.home {
@@ -142,6 +143,9 @@ img {
         padding-left: 0px;
         padding-right: 0px;
     }
+    .blogHeader {
+        margin-left: -60px;
+    }   
     .blogposttext > p {
         font-size: 13pt;
     }
@@ -239,6 +243,19 @@ img {
     }
     .blogFoto {
         width: 55%;
+    }
+    .blogimg3 {
+        width: 75%;
+    }
+    #newCircle {
+        width: 200px;
+    }
+    #futureHead {
+        font-size: 30pt;
+    }
+    #bowieText {
+        margin-left: 450px;
+        margin-right: 450px;
     }
 }    
 @media (max-width: 2750px) {
@@ -603,6 +620,10 @@ img {
     .blogFoto {
         width: 55%;
     }
+    #bowieText {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
 }
 @media (max-width: 1375px) {
     body.bloggy {
@@ -705,6 +726,11 @@ img {
     .blogFoto {
         width: 60%;
     }
+    #bowieText {
+        margin-left: 175px;
+        margin-right: 175px;
+    }
+
 }
 @media (max-width: 1150px) {
     #aboutme {
@@ -779,6 +805,10 @@ img {
     }
     .blogFoto {
         width: 60%;
+    }
+    #bowieText {
+        margin-left: 125px;
+        margin-right: 125px;
     }
 }
 @media (max-width: 990px) {
@@ -890,6 +920,10 @@ img {
     .blogFoto {
         width: 60%;
     }
+    #bowieText {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }    
 @media (max-width: 770px) {
     body.bloggy {
@@ -999,7 +1033,10 @@ img {
     .blogFoto {
         width: 65%;
     }
-  
+    #bowieText {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }    
 @media (max-width: 630px) {
     #aboutme {
@@ -1014,6 +1051,14 @@ img {
         font-size: 95px;
         margin-top: -40px;
     }  
+    .blogHeader {
+        font-size: 13pt;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    #dunning {
+        margin-left: -10px;
+    }
     .quote2New {
         margin-left: 35px;
         margin-right: 35px;
@@ -1029,6 +1074,7 @@ img {
     .allBlogPosts {
         margin-left: 0px;
         margin-right: 0px;
+        
 
     }
     .mostRecentText {
@@ -1095,6 +1141,15 @@ img {
     }
     .blogFoto {
         width: 70%;
+    }
+    .blogimg3 {
+        width: 100%;
+    }
+    #newCircle {
+        width: 100px;
+    }    
+    #futureHead {
+        font-size: 20pt;
     }
 }
 @media (max-width: 520px) {
@@ -1401,12 +1456,13 @@ body {
     display: flex;
     color: #fe7c7c;
     font-size: 10pt;
+   
 }
 // ----------------FRSH PICKS -----------------------------------------------------------------------
 .quickPicks {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
     width: 100%;
@@ -1442,7 +1498,7 @@ body {
     font-size: 20pt;
     color: #e1e1e1;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: 10px;
 
 }
@@ -1450,10 +1506,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-family: Montserrat;
-    justify-content: center;
+    justify-content: left;
     margin-top: -20px;
     color: white;
     padding: 10px;
+    font-size: 10pt;
 }
 .newestText1:hover {
     background-color: #000000;
@@ -1500,6 +1557,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     color: white;
+    font-family: Archivo Black;
 }
 .newestText2 {
     display: flex;
@@ -1554,6 +1612,169 @@ body {
     margin-top: 10px;
     opacity: .5;
 }
+#newCircle {
+    width: 60px;
+    padding: 5px;
+    height: auto;
+    animation: rotation 25s infinite linear;
+}
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+      
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.newCircle {
+    background-color: black; 
+    display: flex; 
+    justify-content: center;
+    padding: 15px;
+}
+//--------------------------------------------------BookClub ---------------------------
+.bookClub {
+    margin-top: 45px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+}
+.innerBookClub {
+    width: 100%;
+    background-color: #000000;
+    color: yellow;
+    padding: 20px;
+}
+#bookClub {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 20pt;
+    font-family: Archivo Black;
+    width: 100%;
+}
+#subBookClub {
+    font-size: 9pt;
+    margin-top: -10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+
+}
+.books1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.book {
+    display: block;
+    border: .5px solid white;
+    color: white;
+    width: 250px;
+    padding: 20px;
+}
+.bookImg {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.booksInner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+}
+.book p {
+    padding: 5px;
+}
+//--------------------------------------------------FUTURE SELF ---------------------------
+
+.contactMe {
+    display: flex;
+    justify-content: center;
+    
+}
+.field {
+    display: flex;
+    flex-direction: column;
+}
+.futureSelf {
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: yellow;
+    background-color: #000000;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+input {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+textarea {
+    width: 350px;
+    height: 150px;
+}
+.futureHeader {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#futureHead {
+    display: flex;
+    font-family: Archivo Black;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#futureSubHead {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Montserrat;
+    font-size: 10pt;
+    width: 350px;
+    margin-top: -15px;
+}
+.emailBtn {
+   
+}
+
+//----------------------------------WEATHER WIDGET ------------------------
+
+.weatherwidget-io {
+    background-color: yellow;
+    font-family: Montserrat;
+    border-bottom: 3px solid black;
+    width: 100%;
+    
+}
 
 //----------------------------------NEW BLOG DESIGN ----------------------------------------------
 .postBlogNew {
@@ -1575,16 +1796,20 @@ body {
     font-size: 12pt; 
     width: 100%;
     margin-top: 7px;
+    padding: 4px;
 }
 .cardSubText {
     font-size: 9pt; 
     font-family: Montserrat;
-    padding: 2px;
+    padding: 3px;
 }
 .datedNew {
     color: #fe7c7c;
     font-size: 8pt;
-    float: right;
+    float: left;
+    padding: 2px;
+    font-family: Archivo Black;
+
 }
 .post-tag-new {
     font-size: 8pt;
@@ -1834,6 +2059,16 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+.blogimg3 {
+    display: flex;
+    height: auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #blogheader {
     display: flex;
     justify-content: center;
@@ -1950,6 +2185,18 @@ ul {
     height: 100%;
    
   }
+  .rotate {
+    animation: rotation 25s infinite linear;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+      
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 /* Music Page CSS Starts Here  ----------------------------------------------------- */
 .musicbody {
     margin-top: 50px;
@@ -2037,7 +2284,7 @@ ul {
 .listcontainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     text-align: center;
     width: 100%;
     margin-top: 50px;
@@ -2184,7 +2431,7 @@ footer > h3 {
 .footerlist2 > p {
     display: inline-block;
     text-decoration: none;
-    padding: 20PX;
+    padding: 10px;
     font-family: Montserrat;
     background-color: white;
 
