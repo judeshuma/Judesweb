@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: AhrefsBot
+Allow: / 
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.judesweb.com/sitemap.xml
+

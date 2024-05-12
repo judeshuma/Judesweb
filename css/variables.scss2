@@ -1,0 +1,1448 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wdth,wght@97.1,100..800&family=Comfortaa:wght@300..700&family=Handjet:wght@100..900&display=swap');
+
+$light: white;
+$primary: black;
+$dark: black;
+
+/* Global Settings  ------------------------------------ ------------------------------------   */
+
+img {
+    height: 35px;
+    width: 35px;
+}
+.navbar-nav {
+    display: flex;
+    margin-left: 5px;
+    letter-spacing: 7px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-link {
+    text-wrap: nowrap;
+}
+.nav-link a:active {
+    background-color: rgb(0, 0, 0);
+    color:#fe7c7c;
+}
+.navbar-nav a:hover {
+    color:#ff8282;
+    background-color: #000000;
+}
+.containerheader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Archivo Black;
+    height: auto;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    border-top: .2px solid black;
+}
+#judesWeb {
+    display:flex;  
+    color: white;
+    width: 100%; 
+    overflow: hidden;
+    margin-top: -150px;
+    font-family: Archivo Black;
+}
+#blurb {
+    display:flex;  
+    color: white;
+    width: 100%; 
+    overflow: hidden;
+    margin-top: 4%;
+    font-family: Archivo Black;
+    font-size: 15pt;
+    text-decoration: underline #fe7c7c;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 20px;
+
+}
+.recentPosts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    gap: 50px;
+
+}
+.recentPostsInner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin: 10px;
+    gap: 20px;
+
+}
+/* Home page CSS starts here ------------------------------------ */
+// @media (max-width: 3000px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//     }
+//     .header {
+//         font-size: 2rem;
+//     }
+// }
+// @media (max-width: 2000px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//     }
+//     .header {
+//         font-size: 2rem;
+//     }
+// }
+// @media (max-width: 1450px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//     }
+//     .header {
+//         font-size: 1.8rem;
+//     }
+// }
+// @media (max-width: 1100px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//         width: 100%;
+//     }
+//     .mainheader {
+//         font-size: 1.5rem;
+//     }
+// }
+// @media (max-width: 950px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//         width: 100%;
+//     }
+//     .mainheader {
+//         font-size: 1.2rem;
+//     }
+// }    
+// @media (max-width: 600px) {
+//     body.home {
+//         background-image: url(judeswebBG.jpeg);
+//         width: 100%;
+//     }
+//     .mainheader {
+//         font-size: 1rem;
+//     }
+// }
+/* ------------------ ALL OTHER PAGES QUERIES -------------- */
+@media (max-width: 3000px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 225px;
+    }
+    #design {
+        font-size: 300px;
+    }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .blogposttext {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .blogposttext > p {
+        font-size: 13pt;
+    }
+    #blogheader {
+        padding-left: 500px;
+        padding-right: 500px;
+        
+    }
+
+    .musicbody {
+        padding-left: 150px; 
+        padding-right: 150px;
+    }
+    .midmusic {
+        gap: 200px;
+    }
+    .aboutmebody {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+    #rainerquote {
+        margin-left: 300px;
+        margin-right: 300px;
+    } 
+    #blogheader2 {
+        font-size: 85px;
+    }
+    #judesWeb {
+        font-size: 500px;
+        margin-top: -210px;
+    }
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+
+}    
+@media (max-width: 2750px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 225px;
+    }
+    #design {
+        font-size: 300px;
+    }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .blogposttext {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .blogposttext > p {
+        font-size: 13pt;
+    }
+    #blogheader {
+        padding-left: 500px;
+        padding-right: 500px;
+        
+    }
+    .musicbody {
+        padding-left: 150px; 
+        padding-right: 150px;
+    }
+    .midmusic {
+        gap: 200px;
+    }
+    .aboutmebody {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+    #rainerquote {
+        margin-left: 300px;
+        margin-right: 300px;
+    } 
+    #blogheader2 {
+        font-size: 85px;
+    }
+    #judesWeb {
+        font-size: 450px;
+        margin-top: -190px;
+    }
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 2450px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 250px;
+    }
+    #design {
+        font-size: 300px;
+    }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .blogposttext {
+        padding-left: 550px;
+        padding-right: 550px;
+    }
+    .blogposttext > p {
+        font-size: 13pt;
+    }
+    #blogheader {
+        padding-left: 450px;
+        padding-right: 450px;
+        
+    }
+    .musicbody {
+        padding-left: 150px; 
+        padding-right: 150px;
+    }
+    .midmusic {
+        gap: 200px;
+        margin-top: 50px;
+    }
+    .aboutmebody {
+        padding-left: 350px;
+        padding-right: 350px;
+    } 
+    #rainerquote {
+        margin-left: 200px;
+        margin-right: 200px;
+    }  
+    #blogheader2 {
+        font-size: 85px;
+    }
+    #judesWeb {
+        font-size: 390px;
+        margin-top: -170px;
+    }
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 2050px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 250px;
+    }
+    #design {
+        font-size: 300px;
+    }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .blogposttext {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+    .blogposttext > p {
+        font-size: 13pt;
+    }
+    #blogheader {
+        padding-left: 350px;
+        padding-right: 350px;
+        
+    }
+    #blogheader2 {
+        font-size: 85px;
+    }
+    .musicbody {
+        padding-left: 150px; 
+        padding-right: 150px;
+    }
+    .midmusic {
+        gap: 200px;
+        margin-top: 50px;
+    }
+    .aboutmebody {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+    #rainerquote {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    #judesWeb {
+        font-size: 300px;
+        margin-top: -120px;
+    }  
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 1750px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 225px;
+    }
+    #design {
+        font-size: 300px;
+    }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .blogposttext {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+    .blogposttext > p {
+        font-size: 13pt;
+    }
+    #blogheader {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    #blogheader2 {
+        font-size: 85px;
+    }
+    .musicbody {
+        padding-left: 150px; 
+        padding-right: 150px;
+    }
+    .midmusic {
+        gap: 200px;
+        margin-top: 50px;
+    }
+    .aboutmebody {
+        padding-left: 350px;
+        padding-right: 350px;
+    } 
+    #rainerquote {
+        margin-left: 100px;
+        margin-right: 100px;
+    } 
+    #judesWeb {
+        font-size: 250px;
+        margin-top: -100px;
+    }  
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 1375px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 300px;
+    }
+    #aboutme {
+        font-size: 200px;
+    }
+    #design {
+        font-size: 200px;
+    }
+    #music {
+        font-size: 200px;
+    }
+    .blogposts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .blogposttext { 
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .blogposttext > p {
+        font-size: 13pt;
+    }
+    #blogheader {
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 60px;
+    }
+    #blogheader2 {
+        font-size: 65px;
+    }
+    .musicbody {
+        padding-left: 100px; 
+        padding-right: 100px;
+    }
+    .midmusic {
+        gap: 200px;
+        margin-top: 50px;
+    }
+    .aboutmebody {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    #rainerquote {
+        margin-left: 100px;
+        margin-right: 100px;
+    } 
+    #judesWeb {
+        font-size: 200px;
+        margin-top: -90px;
+    }  
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 1150px) {
+    #aboutme {
+        font-size: 150px;
+    }
+    #judesWeb {
+        font-size: 180px;
+        margin-top: -80px;
+    }  
+    .newestPost1 img {
+        display: block;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 990px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 240px;
+    }
+    #aboutme {
+        font-size: 120px;
+    }
+    #design {
+        font-size: 150px;
+    }
+    #music {
+        font-size: 170px;
+    }
+    #blogheader {
+        font-size: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #blogheader2 {
+        font-size: 45px;
+    }
+    .blogposts {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .blogposttext { 
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .blogposttext > p {
+        font-size: 13pt;
+    }
+    .musicbody {
+        padding-left: 50px; 
+        padding-right: 50px;
+    }
+    .midmusic {
+        gap: 100px;
+        margin-top: 50px;
+    }
+    #rainerquote {
+        margin-left: 70px;
+        margin-right: 100px;
+    }
+    .aboutmebody {
+        padding-left: 70px;
+        padding-right: 100px;
+    }
+    #judesWeb {
+        font-size: 150px;
+        margin-top: -60px;
+    }
+    .newestPost1 img {
+        display: block;
+    }  
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+}    
+@media (max-width: 770px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 190px;       
+    }
+    #aboutme {
+        font-size: 100px;
+    }
+    #design {
+        font-size: 100px;
+    }
+    #music {
+        font-size: 120px;
+    }
+    .blogposts {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .blogposttext { 
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+    .blogposttext > p {
+        font-size: 12pt;
+    }
+    #blogheader {
+        padding-left: 75px;
+        padding-right: 75px;
+        font-size: 38px;
+    }
+    #blogheader2 {
+        font-size: 35px;
+    }
+    .musicbody {
+        padding-left: 50px; 
+        padding-right: 50px;
+    }
+    .midmusic {
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .aboutmebody {
+        padding-left: 50px;
+        padding-right: 50px;
+    } 
+    #rainerquote {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #judesWeb {
+        font-size: 120px;
+        margin-top: -50px;
+    }  
+    .newestPost1 img {
+        display: none;
+    }
+    .newHeader {
+        font-size: 40px;
+    }
+    .newHeader2 {
+        font-size: 25px;
+    }
+}    
+@media (max-width: 630px) {
+     .containerheader > p {
+        font-size: 150px;
+    }
+    #aboutme {
+        font-size: 80px;
+    }
+    #blogheader {
+        padding-left: 75px;
+        padding-right: 75px;
+        font-size: 30px;
+    }
+    #judesWeb {
+        font-size: 95px;
+        margin-top: -40px;
+    }  
+    .newestPost1 img {
+        display: none;
+    }
+    .newestPost1 img {
+        display: none;
+    }
+    .newHeader {
+        font-size: 30px;
+    }
+    .newHeader2 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 520px) {
+    body.bloggy {
+        background-image: url(whitebg.jpeg);
+        width: 100%;
+    }
+    .containerheader > p {
+        font-size: 110px;
+    }
+    #aboutme {
+        font-size: 50px;
+    }
+    #design {
+        font-size: 80px;
+    }
+    .designimg {
+        width: 150px;
+        height: 150px;
+    }
+    #music {
+        font-size: 85px;
+    }
+    .blogposts {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .blogposttext { 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .blogposttext > p {
+        font-size: 12pt;
+    }
+    #blogheader {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 25px;
+    }
+    #blogheader2 {
+        font-size: 22.5px;
+    }
+    
+    .musicbody {
+        padding-left: 50px; 
+        padding-right: 50px;
+    }
+    .codesnippet > code {
+       font-size: 10pt;
+    }
+    .musicbody {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .midmusic {
+        gap: 0px;
+        margin-top: 50px;
+    }
+    .aboutmebody {
+        padding-left: 35px;
+        padding-right: 35px;
+    } 
+    #rainerquote {
+        margin-left: 20px;
+        margin-right: 20px;
+    }    
+    #judesWeb {
+        font-size: 65px;
+        margin-top: -28px;
+    }  
+    .newestPost1 img {
+        display: none;
+    }
+    .newHeader {
+        font-size: 27px;
+    }
+    .newHeader2 {
+        font-size: 17px;
+    }
+}
+/* ------------------ Homepage CSS starts here -------------- */
+.home {
+    background-color: black;
+}
+body {
+    margin: 0;
+    padding: 0;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    background-color: black;
+}
+.mainheader {
+    display: flex;
+    height: auto;
+    color: #EE96A2;
+    position: absolute;
+    text-wrap: wrap;
+    justify-content: left;
+    margin-top: 220px;
+    margin-right: 400px;
+    margin-left: 60px;
+    color: white;
+    font-family: Archivo Black;
+    animation-name: changeColor;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes changeColor {
+    0% {
+      color: white;
+      opacity: 1;
+    }
+    60% {
+      color: #EE96A2;
+      filter: blur(2px);
+      opacity: 1;
+    }
+    100% {
+      color: white;
+      opacity: 1;
+    }
+  }
+
+/* blog page css starts here ------------------------------------ ------------------------------------  */
+
+.newHeaderBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    border-top: .5px solid black;
+    border-bottom: .5px solid black;
+}
+
+.newHeader {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: left;
+    margin-left: 40px;
+    text-align: center;
+    font-family: Archivo Black;
+    letter-spacing: 5px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.newHeader2 {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: left;
+    margin-left: 20px;
+    text-align: center;
+    font-family: Archivo Black;
+    color: #fe7c7c;
+    // border: 1px solid black;
+    opacity: .5;
+    // text-decoration: underline #ff8282;
+}
+.newestPost1 {
+    display: block;
+    width: 100%;
+    min-width: 325px;
+    max-width: 325px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.newestPost1 img {
+    height: auto;
+    width: 100%;
+
+}
+.newestPost {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 325px;
+}
+.newestPost *{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.newestText {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16pt;
+}
+.newestDate {
+    width: 100%;
+    display: flex;
+    color: #EE96A2;
+    font-size: 10pt;
+}
+.newestPost img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-shadow: 0 0 5px 0;
+    
+}
+.blogHalves {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blogNavBar {
+    margin-top: 0px;
+    display: flex;
+    height: 50px;
+    width: 50%;
+    gap: 50px;
+    flex-direction: row;
+}
+.mostRecentText {
+    width: 100%; 
+    display: flex; 
+    justify-content: left; 
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    text-decoration: underline .5px #EE96A2;
+    color:#000000;
+    // border: 1px solid black;
+    font-family: Montserrat;
+    font-size: 10pt;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+.otherNew {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+    gap: 50px;
+    padding: 0px;
+    margin: 20px;
+    border-left: 1px solid black;
+}
+.otherNew button {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30px;
+    font-family: Archivo Black;
+    border-radius: 4px;
+    border: none;
+}
+.otherNew button:hover {
+    color: #ff8282;
+}
+#blogborder {
+    display: flex;
+    width: 55%;
+    border-top: 1px solid black;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    opacity: .5;
+}
+#blogborder2 {
+    display: flex;
+    width: 55%;
+    border-top: 1px solid black;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    opacity: .5;
+}
+.blogintrocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding:4%;
+}
+.blogintro {
+    flex-direction: row;
+    flex-basis: 450px;
+}
+.blogintro > p {
+    color: #fe7c7c;
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
+}
+.blogintro2 {
+    flex-direction: row;
+    flex-basis: 450px;
+}
+.blogintro2 > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+} 
+.qoute {
+    display: flex;
+    width: 100%;
+}
+.quote > h1 {
+    display: flex;
+    font-family: Montserrat;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+}
+.quote2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+    opacity: .6;
+    margin-bottom: 5px;
+}
+.quote2 button {
+    padding: 5px 10px;
+    flex: 0;
+    display: flex;
+    font-family: Montserrat;
+    margin-top: 0px;
+    text-wrap: nowrap;
+    color: #a4a4a4;
+    border: .5px solid black;
+    border-radius: 2px;
+}
+.quote2 button:hover {
+    color: black;
+}
+.blogposts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.postBlog {
+    display: none;
+  }
+
+.show {
+display: flex;
+}
+.btn:active {
+    background-color: #666;
+    color: white;
+  }
+.dated {
+    display: flex;
+    width: 30%;
+    font-size: 9pt;
+    color: #EE96A2;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+.card-text {
+    text-align: justify;
+    
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 0px;
+}
+.card img {
+    height: 100%;
+    width: 100%;
+}
+.post-tag {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    border-radius:2px;
+    width: 50px;
+    background-color: rgb(230, 230, 230);
+    padding: 2px;
+    opacity: .2;
+}
+
+
+
+/* ALL SINGLE BLOG POSTS CSS starts here ------------------------------------ ------------------------------------  */
+.containerblog {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.containerblog > img {
+    width: 100px;
+    height: 100px;
+}
+.bloggy {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.blogcontent {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-top: .2px solid black;
+}
+.blogcontent > p {
+    font-family: Archivo Black;
+    font-size: 85px;
+    margin-top: 50px;
+    padding: 35px;
+    background-color: none;
+}
+.blogposttext {
+    font-family: sans-serif;
+    text-indent: 50px;
+    font-size: 13pt;
+    text-align: justify;
+}
+.blogposttext a {
+    color: #000000;
+}
+.blogposttext li {
+    list-style: none;
+    font-size: 12pt;
+    font-family: sans-serif;
+}
+.blogdate {
+    float: right;
+    color: #EE96A2;
+}
+.blogimg {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.blogimg2 {
+    display: flex;
+    width: 340px;
+    height: auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#blogheader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.codesnippet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+}
+ul {
+    display: block;
+}
+.overlay {
+    position: relative;
+    text-align: center;
+}
+#blogheader2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Archivo Black;
+    color: white;
+    padding: 35px;
+    background-color: none;
+}
+#davidBowie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+#verbasizerVideo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+#verbasizerPhoto {
+    width: 100%;
+    height: auto;
+}
+  /* Design page CSS starts here ------------------------------------ ------------------------------------  */
+#design {
+    background-image: url(https://pyxis.nymag.com/v1/imgs/117/ebe/e4188d66c1e3b4f7e76cc112d42310f886-05-richard-prince-lede.2x.rhorizontal.w700.jpg);
+    background-size: 100% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+  .designPage {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+  .designimages {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex: 1;
+    height: auto;
+    gap: 50px;
+  }
+  .designimages * {
+    width: 300px;
+    height: 100%;
+   
+  }
+/* Music Page CSS Starts Here  ----------------------------------------------------- */
+.musicbody {
+    margin-top: 50px;
+}
+.musicTop {
+    display: flex;
+    width: 100%;
+    border: 1 px solid black;
+}
+.spotifyPlayer {
+    width: 100%;
+}
+.musicphotobox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap; 
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+}
+.musicphotobox img {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    background-color: #EE96A2;
+    border: 0px solid black;
+}
+.midmusic {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.midmusicleft {
+    justify-self: center;
+    align-items: center;
+    background-color: white;
+
+}
+.midmusicleft h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Archivo Black;
+}
+.midmusicright {
+    justify-self: center;
+    align-items: center;
+    background-color: white;
+    border: 50px solid white;
+    
+}
+.midmusicright > p {
+    color: #EE96A2;
+}
+.vimeo {
+    background-color: rgb(250, 248, 248);
+    width: 100%;
+    border: 20px solid black;
+}
+.vimeoheader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Archivo Black;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.vimeocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 25px;
+    padding: 25px;
+
+}
+.listcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+#licenseheader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Archivo Black;
+    width: 100%;
+}
+li {
+    letter-spacing: 2px;
+    width: 100%;
+}
+.listcontainer li {
+    list-style: none;
+}
+/* ABOUT ME CSS STARTS HERE ------------------------------------ */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: right;
+    overflow: hidden;
+    justify-content: center;
+}
+#tvStatic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#aboutme {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.aboutme {
+    margin-top: 100px;
+    display: block;
+    height: auto;
+    width: 100%;
+    text-align: justify;
+}
+.aboutmebody {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.aboutmebody p {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+/* COMMENT CSS STARTS HERE -----------------------------------------*/
+.commentsbox {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+/* FOOTER CSS STARTS HERE ------------------------------------ */
+footer > h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    letter-spacing: .2em;
+    font-family: Archivo Black;
+    margin-top: 20px;
+}
+
+.footerlist2 {
+    justify-content: center;
+    text-align: center;
+    padding: 75px;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f1f1f1;
+    height: auto;
+}
+.footerlist2 > p {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20PX;
+    font-family: Montserrat;
+    background-color: white;
+
+}
+.links { 
+   text-decoration: none;
+   color: #000000;
+}
+.footerlist2 a:hover {
+    color: white;
+    background-color: #000000;
+}
