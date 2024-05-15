@@ -1484,10 +1484,11 @@ body {
     display: flex;
     flex: 50%;
     height: auto;
-    margin: 30px;
+    margin: 0px;
 }
 .topPost2 {
     background-color: #000000;
+    border-bottom: 2px solid white;
 }
 .topPost2img {
     width: 100%;
@@ -1548,6 +1549,7 @@ body {
     justify-content: center;
     border: 1px solid white;
     height: auto;
+    align-items: center;
 }
 .newestPost1 img {
     height: auto;
@@ -1996,7 +1998,7 @@ display: flex;
 }
 .containerblog > img {
     width: 100px;
-    height: 100px;
+    height: auto;
 }
 .bloggy {
     display: block;
