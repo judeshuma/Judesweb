@@ -2479,13 +2479,18 @@ ul {
     text-align: center;
 }
 /* FOOTER CSS STARTS HERE ------------------------------------ */
-footer > h3 {
+footer > a > h3 {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 5px;
     letter-spacing: .2em;
     font-family: Archivo Black;
+    color: #000000;
+}
+
+footer > a {
+    text-decoration: none;
 }
 
 .footerlist2 {
