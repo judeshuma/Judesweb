@@ -21,7 +21,7 @@ img {
 .navbar-nav {
     display: flex;
     margin-left: 5px;
-    letter-spacing: 7px;
+    letter-spacing: 3px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -166,8 +166,8 @@ img {
         padding-right: 500px; 
     }
     .musicbody {
-        padding-left: 150px; 
-        padding-right: 150px;
+        padding-left: 650px; 
+        padding-right: 650px;
     }
     .midmusic {
         gap: 200px;
@@ -282,8 +282,8 @@ img {
         padding-right: 500px;
     }
     .musicbody {
-        padding-left: 150px; 
-        padding-right: 150px;
+        padding-left: 650px; 
+        padding-right: 650px;
     }
     .midmusic {
         gap: 200px;
@@ -360,8 +360,8 @@ img {
         padding-right: 450px;
     }
     .musicbody {
-        padding-left: 150px; 
-        padding-right: 150px;
+        padding-left: 600px; 
+        padding-right: 600px;
     }
     .midmusic {
         gap: 200px;
@@ -429,8 +429,8 @@ img {
     //     margin-right: 300px;
     // }
     .blogposttext {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 250px;
+        padding-right: 250px;
     }
     .blogposttext > p {
         font-size: 13pt;
@@ -444,8 +444,8 @@ img {
         font-size: 85px;
     }
     .musicbody {
-        padding-left: 150px; 
-        padding-right: 150px;
+        padding-left: 450px; 
+        padding-right: 450px;
     }
     .midmusic {
         gap: 200px;
@@ -529,8 +529,8 @@ img {
     //     margin-right: 200px;
     // }
     .blogposttext {
-        padding-left: 160px;
-        padding-right: 160px;
+        padding-left: 190px;
+        padding-right: 190px;
     }
     .blogposttext > p {
         font-size: 13pt;
@@ -543,8 +543,8 @@ img {
         font-size: 85px;
     }
     .musicbody {
-        padding-left: 150px; 
-        padding-right: 150px;
+        padding-left: 350px; 
+        padding-right: 350px;
     }
     .midmusic {
         gap: 200px;
@@ -625,6 +625,16 @@ img {
         margin-right: 250px;
     }
 }
+@media (max-width: 1550px) {
+    .musicbody {
+        padding-left: 300px; 
+        padding-right: 300px;
+    }
+    .blogposttext {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
 @media (max-width: 1375px) {
     body.bloggy {
         background-image: url(whitebg.jpeg);
@@ -657,8 +667,8 @@ img {
         font-size: 65px;
     }
     .musicbody {
-        padding-left: 100px; 
-        padding-right: 100px;
+        padding-left: 270px; 
+        padding-right: 270px;
     }
     .midmusic {
         gap: 200px;
@@ -747,6 +757,10 @@ img {
     .btn1 {
         font-size: 18px;
     }
+    .musicbody {
+        padding-left: 200px; 
+        padding-right: 200px;
+    }
     .allBlogPosts {
         margin-left: 80px;
         margin-right: 80px;
@@ -819,6 +833,7 @@ img {
     #aboutme {
         font-size: 120px;
     }
+
     #blogheader {
         font-size: 50px;
         padding-left: 100px;
@@ -850,8 +865,8 @@ img {
         font-size: 13pt;
     }
     .musicbody {
-        padding-left: 50px; 
-        padding-right: 50px;
+        padding-left: 100px; 
+        padding-right: 100px;
     }
     .midmusic {
         gap: 100px;
@@ -1549,7 +1564,7 @@ body {
     justify-content: center;
     border: 1px solid white;
     height: auto;
-    align-items: center;
+    
 }
 .newestPost1 img {
     height: auto;
@@ -1808,7 +1823,7 @@ textarea {
 .cardSubText {
     font-size: 9pt; 
     font-family: Montserrat;
-    padding: 3px;
+    padding: 5px;
 }
 .datedNew {
     color: #fe7c7c;
@@ -1820,7 +1835,7 @@ textarea {
 }
 .post-tag-new {
     font-size: 8pt;
-    width: 35px;
+    width: 40px;
     justify-content: center;
     display: inline-flex;
     flex-direction: row;
@@ -1854,37 +1869,6 @@ textarea {
     color: yellow;
 }
 
-
-//BLOG CARDS and FILTERS HERE -----------------------------------------------------------------------------------------
-// .blackBack {
-//     height: auto;
-//     width: 100%;
-//     margin-bottom: 35px;
-//     margin-top: -15px;
-// }
-// .showAllButtonBox {
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-//     width: 100%;
-//     padding: 20px;
-//     margin-left: auto;
-//     margin-right: auto;
-
-// }
-// #showAllButton {
-//     padding: 10px;
-//     border: none;
-//     margin-top: 20px;
-//     font-family: Montserrat;
-//     text-decoration: none;
-//     color: #000000;
-//     text-align: center;
-//     justify-content: center;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 20px;
-// }
 .qoute {
     display: flex;
     width: 100%;
@@ -2029,7 +2013,7 @@ display: flex;
 h2 {
     font-family: Montserrat;
     text-align: left;
-    padding: 10px;
+    padding-bottom: 10px;
     text-indent: 0%;
 }
 .blogposttext a {
@@ -2186,6 +2170,26 @@ ul {
 .uList > li {
     font-family: sans-serif;
 }
+.relatedHeader {
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    letter-spacing: 5px;
+    margin-top: 100px;
+}
+.relatedSquares {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.squares {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 25px;
+}
   /* Design page CSS starts here ------------------------------------ ------------------------------------  */
 #design {
     background-image: url(https://pyxis.nymag.com/v1/imgs/117/ebe/e4188d66c1e3b4f7e76cc112d42310f886-05-richard-prince-lede.2x.rhorizontal.w700.jpg);
@@ -2194,8 +2198,7 @@ ul {
     -webkit-background-clip: text;
 }
   .designPage {
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 100%;
     margin-top: 100px;
   }
   .designimages {
@@ -2205,12 +2208,11 @@ ul {
     width: 100%;
     flex: 1;
     height: auto;
-    gap: 50px;
+    gap: 30px;
   }
   .designimages * {
-    width: 300px;
+    width: 100%;
     height: 100%;
-   
   }
   .rotate {
     animation: rotation 25s infinite linear;
@@ -2224,112 +2226,136 @@ ul {
       transform: rotate(359deg);
     }
   }
+  .designStack {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  .designLink {
+    color: #fe7c7c;
+  }
+  .designLink:hover {
+    text-decoration: underline black;
+  }
+
 /* Music Page CSS Starts Here  ----------------------------------------------------- */
 .musicbody {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 .musicTop {
     display: flex;
     width: 100%;
-    border: 1 px solid black;
 }
 .spotifyPlayer {
     width: 100%;
+}
+.judeShumaCom {
+    font-family: Archivo Black;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin-top: 35px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    color: #fe7c7c;
+}
+.judeShumaCom:hover {
+    color: #000000;
 }
 .musicphotobox {
     display: flex;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap; 
-    margin-top: 0px;
+    margin-top: 50px;
     width: 100%;
     height: auto;
-    gap: 50px;
+    gap: 20px;
 }
-.musicphotobox img {
-    width: 250px;
-    height: 250px;
-    padding: 5px;
-    background-color: #EE96A2;
-    border: 0px solid black;
-}
-.midmusic {
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-.midmusicleft {
-    justify-self: center;
-    align-items: center;
-    background-color: white;
-
-}
-.midmusicleft h1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: Archivo Black;
-}
-.midmusicright {
-    justify-self: center;
-    align-items: center;
-    background-color: white;
-    border: 50px solid white;
+// .musicphotobox img {
+//     width: 350px;
+//     height: 350px;
+//     padding: 5px;
+//     background-color: #EE96A2;
     
-}
-.midmusicright > p {
-    color: #fe7c7c;
-}
-.vimeo {
-    background-color: rgb(250, 248, 248);
-    width: 100%;
-    border: 20px solid black;
-}
-.vimeoheader {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: Archivo Black;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
+// }
+// .midmusic {
+//     display: inline-flex;
+//     flex-wrap: wrap;
+//     width: 100%;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 50px;
+// }
+// .midmusicleft {
+//     justify-self: center;
+//     align-items: center;
+//     background-color: white;
 
-.vimeocontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    gap: 25px;
-    padding: 25px;
+// }
+// .midmusicleft h1 {
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
+//     font-family: Archivo Black;
+// }
+// .midmusicright {
+//     justify-self: center;
+//     align-items: center;
+//     background-color: white;
+//     border: 50px solid white;
+    
+// }
+// .midmusicright > p {
+//     color: #fe7c7c;
+// }
+// .vimeo {
+//     background-color: rgb(250, 248, 248);
+//     width: 100%;
+//     border: 20px solid black;
+// }
+// .vimeoheader {
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
+//     font-family: Archivo Black;
+//     width: 100%;
+//     margin-top: 50px;
+//     margin-bottom: 25px;
+// }
 
-}
-.listcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    text-align: center;
-    width: 100%;
-    margin-top: 50px;
-}
-#licenseheader {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: Archivo Black;
-    width: 100%;
-}
-li {
-    letter-spacing: 2px;
-    width: 100%;
-}
-.listcontainer li {
-    list-style: none;
-}
+// .vimeocontainer {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     flex-direction: row;
+//     width: 100%;
+//     gap: 25px;
+//     padding: 25px;
+
+// }
+// .listcontainer {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: left;
+//     text-align: center;
+//     width: 100%;
+//     margin-top: 50px;
+// }
+// #licenseheader {
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
+//     font-family: Archivo Black;
+//     width: 100%;
+// }
+// li {
+//     letter-spacing: 2px;
+//     width: 100%;
+// }
+// .listcontainer li {
+//     list-style: none;
+// }
 /* ABOUT ME CSS STARTS HERE ------------------------------------ */
 #aboutme {
     display: flex;
@@ -2435,13 +2461,17 @@ li {
     width: 250px;
     box-shadow: 0 0 5;
     margin: 20px;
-    margin-top: 200px;
+    margin-top: 100px;
+    margin-bottom: -20px;
 }
 #donateBox {
     display: flex;
     justify-content: center;
 }
-
+.buttonText {
+    font-size: 10px;
+    font-family: Montserrat;
+}
 /* COMMENT CSS STARTS HERE -----------------------------------------*/
 .commentsbox {
     display: block;
@@ -2453,10 +2483,9 @@ footer > h3 {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 50px;
+    padding: 5px;
     letter-spacing: .2em;
     font-family: Archivo Black;
-    margin-top: 20px;
 }
 
 .footerlist2 {
